@@ -1,0 +1,10 @@
+<template id="collection-list">
+    <div class="mb-5">
+        <div v-for="collection in collections">
+            <h2>{{collection.nombre}}</h2>
+            <div v-for="doc in collection.docs">
+                {{doc.title[0]}}
+            </div>
+        </div>
+    </div>
+</template>

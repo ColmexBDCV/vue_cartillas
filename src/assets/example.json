@@ -1,0 +1,3553 @@
+{
+    "response": {
+        "docs": [
+            {
+                "system_create_dtsi": "2019-05-20T16:04:35Z",
+                "system_modified_dtsi": "2019-06-04T17:28:52Z",
+                "has_model_ssim": [
+                    "Collection"
+                ],
+                "id": "bc386j61k",
+                "accessControl_ssim": [
+                    "d7d55bdf-1f4b-4831-91af-0f49d79c0396"
+                ],
+                "depositor_ssim": [
+                    "rcuellar@colmex.mx"
+                ],
+                "depositor_tesim": [
+                    "rcuellar@colmex.mx"
+                ],
+                "title_tesim": [
+                    "Tesis"
+                ],
+                "hasRelatedImage_ssim": [
+                    "9c67wn32b"
+                ],
+                "collection_type_gid_ssim": [
+                    "gid://hyrax/hyrax-collectiontype/1"
+                ],
+                "thumbnail_path_ss": "/downloads/9c67wn32b?file=thumbnail",
+                "bytes_lts": 166044521,
+                "visibility_ssi": "open",
+                "read_access_group_ssim": [
+                    "public"
+                ],
+                "edit_access_group_ssim": [
+                    "admin"
+                ],
+                "edit_access_person_ssim": [
+                    "rcuellar@colmex.mx"
+                ],
+                "human_readable_type_tesim": [
+                    "Collection"
+                ],
+                "nesting_collection__pathnames_ssim": [
+                    "bc386j61k"
+                ],
+                "nesting_collection__deepest_nested_depth_isi": 1,
+                "_version_": 1642435759763881984,
+                "timestamp": "2019-08-21T00:53:20.434Z",
+                "score": 1.0
+            },
+            {
+                "system_create_dtsi": "2019-05-18T17:56:56Z",
+                "system_modified_dtsi": "2019-06-20T19:50:44Z",
+                "has_model_ssim": [
+                    "Thesis"
+                ],
+                "id": "xs55mc49j",
+                "accessControl_ssim": [
+                    "90b6f640-7458-4d46-9c39-4e1eb93e7597"
+                ],
+                "hasRelatedMediaFragment_ssim": [
+                    "hm50ts11p"
+                ],
+                "hasRelatedImage_ssim": [
+                    "hm50ts11p"
+                ],
+                "depositor_ssim": [
+                    "rcuellar@colmex.mx"
+                ],
+                "depositor_tesim": [
+                    "rcuellar@colmex.mx"
+                ],
+                "title_tesim": [
+                    "La traducción de en e y en la versión española de l'amant de Marguerite Duras"
+                ],
+                "date_uploaded_dtsi": "2019-05-18T17:56:55Z",
+                "date_modified_dtsi": "2019-05-18T17:56:56Z",
+                "isPartOf_ssim": [
+                    "admin_set/default"
+                ],
+                "subject_conacyt_tesim": [
+                    "4"
+                ],
+                "pub_conacyt_tesim": [
+                    "Students",
+                    "Researchers"
+                ],
+                "type_conacyt_tesim": [
+                    "info:eu-repo/semantics/masterThesis"
+                ],
+                "director_tesim": [
+                    "Vázquez Laslop, María Eugenia"
+                ],
+                "extension_tesim": [
+                    "108 páginas"
+                ],
+                "other_formats_tesim": [
+                    "39050916342U (CE)",
+                    "39050916341T (DC)",
+                    "39050916343V (DC)",
+                    "39050916340S",
+                    "390509415936 (DC)"
+                ],
+                "degree_program_tesim": [
+                    "Maestro en Traducción"
+                ],
+                "resource_type_tesim": [
+                    "Tesis de Maestría"
+                ],
+                "creator_tesim": [
+                    "Arzola Ordoñez, Abraham"
+                ],
+                "language_tesim": [
+                    "español"
+                ],
+                "subject_work_tesim": [
+                    "Duras, Marguerite, 1914-1996 / L'amant"
+                ],
+                "subject_tesim": [
+                    "Traducciones al español",
+                    "Literatura francesa",
+                    "Conjunciones"
+                ],
+                "classification_tesim": [
+                    "843.91/D952ar"
+                ],
+                "center_tesim": [
+                    "Centro de Estudios Lingüísticos y Literarios"
+                ],
+                "license_tesim": [
+                    "http://creativecommons.org/licenses/by-nc-nd/4.0/"
+                ],
+                "rights_statement_tesim": [
+                    "http://rightsstatements.org/vocab/InC-NC/1.0/"
+                ],
+                "date_created_tesim": [
+                    "2014"
+                ],
+                "identifier_tesim": [
+                    "990007216750302716"
+                ],
+                "thumbnail_path_ss": "/downloads/hm50ts11p?file=thumbnail",
+                "suppressed_bsi": false,
+                "actionable_workflow_roles_ssim": [
+                    "admin_set/default-default-managing",
+                    "admin_set/default-default-approving",
+                    "admin_set/default-default-depositing"
+                ],
+                "workflow_state_name_ssim": [
+                    "deposited"
+                ],
+                "member_ids_ssim": [
+                    "hm50ts11p"
+                ],
+                "member_of_collections_ssim": [
+                    "Tesis"
+                ],
+                "member_of_collection_ids_ssim": [
+                    "bc386j61k"
+                ],
+                "file_set_ids_ssim": [
+                    "hm50ts11p"
+                ],
+                "visibility_ssi": "open",
+                "admin_set_tesim": [
+                    "Default Admin Set"
+                ],
+                "human_readable_type_tesim": [
+                    "Thesis"
+                ],
+                "read_access_group_ssim": [
+                    "public"
+                ],
+                "edit_access_group_ssim": [
+                    "admin"
+                ],
+                "edit_access_person_ssim": [
+                    "rcuellar@colmex.mx"
+                ],
+                "nesting_collection__ancestors_ssim": [
+                    "bc386j61k"
+                ],
+                "nesting_collection__parent_ids_ssim": [
+                    "bc386j61k"
+                ],
+                "nesting_collection__pathnames_ssim": [
+                    "bc386j61k/xs55mc49j"
+                ],
+                "nesting_collection__deepest_nested_depth_isi": 2,
+                "_version_": 1642437080937136128,
+                "timestamp": "2019-08-21T01:14:20.403Z",
+                "score": 1.0
+            },
+            {
+                "system_create_dtsi": "2019-05-18T17:56:22Z",
+                "system_modified_dtsi": "2019-06-04T23:50:23Z",
+                "has_model_ssim": [
+                    "Thesis"
+                ],
+                "id": "pg15bf33d",
+                "accessControl_ssim": [
+                    "edf904c7-ea19-4b76-8f59-2b778fdf55b4"
+                ],
+                "hasRelatedMediaFragment_ssim": [
+                    "9c67wn32b"
+                ],
+                "hasRelatedImage_ssim": [
+                    "9c67wn32b"
+                ],
+                "depositor_ssim": [
+                    "rcuellar@colmex.mx"
+                ],
+                "depositor_tesim": [
+                    "rcuellar@colmex.mx"
+                ],
+                "title_tesim": [
+                    "Expresión de argumentos, funciones gramaticales y transitividad en P'orhépecha"
+                ],
+                "date_uploaded_dtsi": "2019-05-18T17:56:22Z",
+                "date_modified_dtsi": "2019-05-18T17:56:22Z",
+                "isPartOf_ssim": [
+                    "admin_set/default"
+                ],
+                "creator_conacyt_tesim": [
+                    "curp: CABA570507MDFPRL07\nfechaNacCons: 1957-05-07T00:00:00-06:00\nidCvuConacyt: 237487\nidIdentificadorCa: CA35355\nnombres: ALEJANDRA\nprimerApellido: CAPISTRAN GARZA\nrn: 2237487\nsegundoApellido: BERT\n"
+                ],
+                "subject_conacyt_tesim": [
+                    "4"
+                ],
+                "pub_conacyt_tesim": [
+                    "Students",
+                    "Researchers"
+                ],
+                "type_conacyt_tesim": [
+                    "info:eu-repo/semantics/doctoralThesis"
+                ],
+                "director_tesim": [
+                    "Treviño, Esthela"
+                ],
+                "extension_tesim": [
+                    "412 páginas"
+                ],
+                "other_formats_tesim": [
+                    "39050943344Z (DC)",
+                    "39050865003T (CE)",
+                    "39050865004U"
+                ],
+                "degree_program_tesim": [
+                    "Doctor en Lingüística"
+                ],
+                "resource_type_tesim": [
+                    "Tesis de Doctorado"
+                ],
+                "creator_tesim": [
+                    "Capistrán Garza Bert, Alejandra"
+                ],
+                "language_tesim": [
+                    "español"
+                ],
+                "geographic_coverage_tesim": [
+                    "México"
+                ],
+                "subject_tesim": [
+                    "Gramática",
+                    "Lenguas",
+                    "Indios de México",
+                    "Tarasco (Idioma)"
+                ],
+                "classification_tesim": [
+                    "497.7/C243e"
+                ],
+                "center_tesim": [
+                    "Centro de Estudios Lingüísticos y Literarios"
+                ],
+                "license_tesim": [
+                    "http://creativecommons.org/licenses/by-nc-nd/4.0/"
+                ],
+                "rights_statement_tesim": [
+                    "http://rightsstatements.org/vocab/InC-NC/1.0/"
+                ],
+                "date_created_tesim": [
+                    "2010"
+                ],
+                "identifier_tesim": [
+                    "990005978850302716"
+                ],
+                "thumbnail_path_ss": "/downloads/9c67wn32b?file=thumbnail",
+                "suppressed_bsi": false,
+                "actionable_workflow_roles_ssim": [
+                    "admin_set/default-default-managing",
+                    "admin_set/default-default-approving",
+                    "admin_set/default-default-depositing"
+                ],
+                "workflow_state_name_ssim": [
+                    "deposited"
+                ],
+                "member_ids_ssim": [
+                    "9c67wn32b"
+                ],
+                "member_of_collections_ssim": [
+                    "Tesis",
+                    "Conacyt"
+                ],
+                "member_of_collection_ids_ssim": [
+                    "bc386j61k",
+                    "fx719m640"
+                ],
+                "file_set_ids_ssim": [
+                    "9c67wn32b"
+                ],
+                "visibility_ssi": "open",
+                "admin_set_tesim": [
+                    "Default Admin Set"
+                ],
+                "human_readable_type_tesim": [
+                    "Thesis"
+                ],
+                "read_access_group_ssim": [
+                    "public"
+                ],
+                "edit_access_group_ssim": [
+                    "admin"
+                ],
+                "edit_access_person_ssim": [
+                    "rcuellar@colmex.mx"
+                ],
+                "nesting_collection__ancestors_ssim": [
+                    "bc386j61k",
+                    "fx719m640"
+                ],
+                "nesting_collection__parent_ids_ssim": [
+                    "bc386j61k",
+                    "fx719m640"
+                ],
+                "nesting_collection__pathnames_ssim": [
+                    "bc386j61k/pg15bf33d",
+                    "fx719m640/pg15bf33d"
+                ],
+                "nesting_collection__deepest_nested_depth_isi": 2,
+                "_version_": 1642451475688849408,
+                "timestamp": "2019-08-21T05:03:08.307Z",
+                "score": 1.0
+            },
+            {
+                "system_create_dtsi": "2019-05-18T17:55:47Z",
+                "system_modified_dtsi": "2019-06-05T00:43:21Z",
+                "has_model_ssim": [
+                    "Thesis"
+                ],
+                "id": "m900nt76t",
+                "accessControl_ssim": [
+                    "691a2199-3405-486e-a758-899bc69beae5"
+                ],
+                "hasRelatedMediaFragment_ssim": [
+                    "fq977v11p"
+                ],
+                "hasRelatedImage_ssim": [
+                    "fq977v11p"
+                ],
+                "depositor_ssim": [
+                    "rcuellar@colmex.mx"
+                ],
+                "depositor_tesim": [
+                    "rcuellar@colmex.mx"
+                ],
+                "title_tesim": [
+                    "Budismo zen en Japón y México"
+                ],
+                "date_uploaded_dtsi": "2019-05-18T17:55:47Z",
+                "date_modified_dtsi": "2019-05-18T17:55:47Z",
+                "isPartOf_ssim": [
+                    "admin_set/default"
+                ],
+                "creator_conacyt_tesim": [
+                    "curp: FIMF831230HDFGDR09\nfechaNacCons: 1983-12-30T00:00:00-06:00\nidCvuConacyt: 552344\nidIdentificadorCa: CA114871\nnombres: FRANCISCO\nprimerApellido: FIGUEROA\nrn: 962688\nsegundoApellido: MEDINA\n"
+                ],
+                "subject_conacyt_tesim": [
+                    "5"
+                ],
+                "pub_conacyt_tesim": [
+                    "Students",
+                    "Researchers"
+                ],
+                "type_conacyt_tesim": [
+                    "info:eu-repo/semantics/masterThesis"
+                ],
+                "director_tesim": [
+                    "Awaihara, Yoshie"
+                ],
+                "extension_tesim": [
+                    "79 páginas"
+                ],
+                "other_formats_tesim": [
+                    "39050937779X",
+                    "39050937780Q (CE)",
+                    "39050937778W (DC)"
+                ],
+                "degree_program_tesim": [
+                    "Maestro en Estudios de Asia y África"
+                ],
+                "resource_type_tesim": [
+                    "Tesis de Maestría"
+                ],
+                "creator_tesim": [
+                    "Figueroa Medina, Francisco"
+                ],
+                "language_tesim": [
+                    "español"
+                ],
+                "geographic_coverage_tesim": [
+                    "Japón",
+                    "México"
+                ],
+                "subject_tesim": [
+                    "Medicina tradicional",
+                    "Budismo Zen"
+                ],
+                "classification_tesim": [
+                    "294.39270972/F4756b"
+                ],
+                "other_related_persons_tesim": [
+                    "Miura, Satomi (lector)",
+                    "Marston, John A. (lector)"
+                ],
+                "center_tesim": [
+                    "Centro de Estudios de Asia y África"
+                ],
+                "license_tesim": [
+                    "http://creativecommons.org/licenses/by-nc-nd/4.0/"
+                ],
+                "rights_statement_tesim": [
+                    "http://rightsstatements.org/vocab/InC-NC/1.0/"
+                ],
+                "date_created_tesim": [
+                    "2015"
+                ],
+                "identifier_tesim": [
+                    "990006806090302716"
+                ],
+                "thumbnail_path_ss": "/downloads/fq977v11p?file=thumbnail",
+                "suppressed_bsi": false,
+                "actionable_workflow_roles_ssim": [
+                    "admin_set/default-default-managing",
+                    "admin_set/default-default-approving",
+                    "admin_set/default-default-depositing"
+                ],
+                "workflow_state_name_ssim": [
+                    "deposited"
+                ],
+                "member_ids_ssim": [
+                    "fq977v11p"
+                ],
+                "member_of_collections_ssim": [
+                    "Tesis",
+                    "Conacyt"
+                ],
+                "member_of_collection_ids_ssim": [
+                    "bc386j61k",
+                    "fx719m640"
+                ],
+                "file_set_ids_ssim": [
+                    "fq977v11p"
+                ],
+                "visibility_ssi": "open",
+                "admin_set_tesim": [
+                    "Default Admin Set"
+                ],
+                "human_readable_type_tesim": [
+                    "Thesis"
+                ],
+                "read_access_group_ssim": [
+                    "public"
+                ],
+                "edit_access_group_ssim": [
+                    "admin"
+                ],
+                "edit_access_person_ssim": [
+                    "rcuellar@colmex.mx"
+                ],
+                "nesting_collection__ancestors_ssim": [
+                    "bc386j61k",
+                    "fx719m640"
+                ],
+                "nesting_collection__parent_ids_ssim": [
+                    "bc386j61k",
+                    "fx719m640"
+                ],
+                "nesting_collection__pathnames_ssim": [
+                    "bc386j61k/m900nt76t",
+                    "fx719m640/m900nt76t"
+                ],
+                "nesting_collection__deepest_nested_depth_isi": 2,
+                "_version_": 1642452043639554048,
+                "timestamp": "2019-08-21T05:12:09.948Z",
+                "score": 1.0
+            },
+            {
+                "system_create_dtsi": "2019-05-18T17:55:29Z",
+                "system_modified_dtsi": "2019-06-04T22:47:37Z",
+                "has_model_ssim": [
+                    "Thesis"
+                ],
+                "id": "pc289j38j",
+                "accessControl_ssim": [
+                    "e2d6fb57-01ef-40b0-b3dc-1e4d7a8a8077"
+                ],
+                "hasRelatedMediaFragment_ssim": [
+                    "05741s03c"
+                ],
+                "hasRelatedImage_ssim": [
+                    "05741s03c"
+                ],
+                "depositor_ssim": [
+                    "rcuellar@colmex.mx"
+                ],
+                "depositor_tesim": [
+                    "rcuellar@colmex.mx"
+                ],
+                "title_tesim": [
+                    "La estrategía de acomodación jesuita y el primer texto anticristiano escrito por un monje budista a finales de la dinastía Ming, 1582-1644"
+                ],
+                "date_uploaded_dtsi": "2019-05-18T17:55:28Z",
+                "date_modified_dtsi": "2019-05-18T17:55:28Z",
+                "isPartOf_ssim": [
+                    "admin_set/default"
+                ],
+                "subject_conacyt_tesim": [
+                    "5"
+                ],
+                "pub_conacyt_tesim": [
+                    "Students",
+                    "Researchers"
+                ],
+                "type_conacyt_tesim": [
+                    "info:eu-repo/semantics/masterThesis"
+                ],
+                "director_tesim": [
+                    "Corsi, Elisabetta"
+                ],
+                "extension_tesim": [
+                    "109 páginas"
+                ],
+                "other_formats_tesim": [
+                    "39050740826O (CE)",
+                    "39050740804I"
+                ],
+                "degree_program_tesim": [
+                    "Maestro en Estudios de Asia y África"
+                ],
+                "resource_type_tesim": [
+                    "Tesis de Maestría"
+                ],
+                "creator_tesim": [
+                    "Alcalde Méndez, Alejandro"
+                ],
+                "language_tesim": [
+                    "español"
+                ],
+                "geographic_coverage_tesim": [
+                    "China"
+                ],
+                "temporary_coverage_tesim": [
+                    "Siglo XVI"
+                ],
+                "subject_tesim": [
+                    "Jesuitas",
+                    "Relaciones",
+                    "Budismo"
+                ],
+                "classification_tesim": [
+                    "266.251/A346e/"
+                ],
+                "center_tesim": [
+                    "Centro de Estudios de Asia y África"
+                ],
+                "license_tesim": [
+                    "http://creativecommons.org/licenses/by-nc-nd/4.0/"
+                ],
+                "rights_statement_tesim": [
+                    "http://rightsstatements.org/vocab/InC-NC/1.0/"
+                ],
+                "date_created_tesim": [
+                    "2002"
+                ],
+                "identifier_tesim": [
+                    "990004876440302716"
+                ],
+                "thumbnail_path_ss": "/downloads/05741s03c?file=thumbnail",
+                "suppressed_bsi": false,
+                "actionable_workflow_roles_ssim": [
+                    "admin_set/default-default-managing",
+                    "admin_set/default-default-approving",
+                    "admin_set/default-default-depositing"
+                ],
+                "workflow_state_name_ssim": [
+                    "deposited"
+                ],
+                "member_ids_ssim": [
+                    "05741s03c"
+                ],
+                "member_of_collections_ssim": [
+                    "Tesis"
+                ],
+                "member_of_collection_ids_ssim": [
+                    "bc386j61k"
+                ],
+                "file_set_ids_ssim": [
+                    "05741s03c"
+                ],
+                "visibility_ssi": "open",
+                "admin_set_tesim": [
+                    "Default Admin Set"
+                ],
+                "human_readable_type_tesim": [
+                    "Thesis"
+                ],
+                "read_access_group_ssim": [
+                    "public"
+                ],
+                "edit_access_group_ssim": [
+                    "admin"
+                ],
+                "edit_access_person_ssim": [
+                    "rcuellar@colmex.mx"
+                ],
+                "nesting_collection__ancestors_ssim": [
+                    "bc386j61k"
+                ],
+                "nesting_collection__parent_ids_ssim": [
+                    "bc386j61k"
+                ],
+                "nesting_collection__pathnames_ssim": [
+                    "bc386j61k/pc289j38j"
+                ],
+                "nesting_collection__deepest_nested_depth_isi": 2,
+                "_version_": 1642436731914420224,
+                "timestamp": "2019-08-21T01:08:47.549Z",
+                "score": 1.0
+            },
+            {
+                "system_create_dtsi": "2019-05-18T17:54:34Z",
+                "system_modified_dtsi": "2019-06-20T19:34:38Z",
+                "has_model_ssim": [
+                    "Thesis"
+                ],
+                "id": "0z708w85q",
+                "accessControl_ssim": [
+                    "8e80af56-9918-426b-8975-0411e1676fcf"
+                ],
+                "hasRelatedMediaFragment_ssim": [
+                    "s4655g99s"
+                ],
+                "hasRelatedImage_ssim": [
+                    "s4655g99s"
+                ],
+                "depositor_ssim": [
+                    "rcuellar@colmex.mx"
+                ],
+                "depositor_tesim": [
+                    "rcuellar@colmex.mx"
+                ],
+                "title_tesim": [
+                    "Teatralización espectacular de lo humorístico en novelas de caballerías de Feliciano de Silva"
+                ],
+                "date_uploaded_dtsi": "2019-05-18T17:54:34Z",
+                "date_modified_dtsi": "2019-05-18T17:54:34Z",
+                "isPartOf_ssim": [
+                    "admin_set/default"
+                ],
+                "subject_conacyt_tesim": [
+                    "4"
+                ],
+                "pub_conacyt_tesim": [
+                    "Students",
+                    "Researchers"
+                ],
+                "type_conacyt_tesim": [
+                    "info:eu-repo/semantics/doctoralThesis"
+                ],
+                "director_tesim": [
+                    "González, Aurelio"
+                ],
+                "extension_tesim": [
+                    "295 páginas"
+                ],
+                "other_formats_tesim": [
+                    "39050937169D (CE)",
+                    "390509371819 (DC)",
+                    "39050937168C"
+                ],
+                "degree_program_tesim": [
+                    "Doctor en Literatura Hispánica"
+                ],
+                "resource_type_tesim": [
+                    "Tesis de Doctorado"
+                ],
+                "creator_tesim": [
+                    "García Álvarez, Juan Pablo"
+                ],
+                "language_tesim": [
+                    "español"
+                ],
+                "temporary_coverage_tesim": [
+                    "Siglo XVI"
+                ],
+                "subject_person_tesim": [
+                    "Silva, Feliciano de 1486-1554"
+                ],
+                "subject_tesim": [
+                    "Libros de caballerias",
+                    "Crítica e interpretación",
+                    "Humorismo español",
+                    "Romances españoles"
+                ],
+                "classification_tesim": [
+                    "863.3/S5861g"
+                ],
+                "center_tesim": [
+                    "Centro de Estudios Lingüísticos y Literarios"
+                ],
+                "license_tesim": [
+                    "http://creativecommons.org/licenses/by-nc-nd/4.0/"
+                ],
+                "rights_statement_tesim": [
+                    "http://rightsstatements.org/vocab/InC-NC/1.0/"
+                ],
+                "date_created_tesim": [
+                    "2016"
+                ],
+                "identifier_tesim": [
+                    "990006682770302716"
+                ],
+                "thumbnail_path_ss": "/downloads/s4655g99s?file=thumbnail",
+                "suppressed_bsi": false,
+                "actionable_workflow_roles_ssim": [
+                    "admin_set/default-default-managing",
+                    "admin_set/default-default-approving",
+                    "admin_set/default-default-depositing"
+                ],
+                "workflow_state_name_ssim": [
+                    "deposited"
+                ],
+                "member_ids_ssim": [
+                    "s4655g99s"
+                ],
+                "member_of_collections_ssim": [
+                    "Tesis"
+                ],
+                "member_of_collection_ids_ssim": [
+                    "bc386j61k"
+                ],
+                "file_set_ids_ssim": [
+                    "s4655g99s"
+                ],
+                "visibility_ssi": "open",
+                "admin_set_tesim": [
+                    "Default Admin Set"
+                ],
+                "human_readable_type_tesim": [
+                    "Thesis"
+                ],
+                "read_access_group_ssim": [
+                    "public"
+                ],
+                "edit_access_group_ssim": [
+                    "admin"
+                ],
+                "edit_access_person_ssim": [
+                    "rcuellar@colmex.mx"
+                ],
+                "nesting_collection__ancestors_ssim": [
+                    "bc386j61k"
+                ],
+                "nesting_collection__parent_ids_ssim": [
+                    "bc386j61k"
+                ],
+                "nesting_collection__pathnames_ssim": [
+                    "bc386j61k/0z708w85q"
+                ],
+                "nesting_collection__deepest_nested_depth_isi": 2,
+                "_version_": 1642437089880440832,
+                "timestamp": "2019-08-21T01:14:28.932Z",
+                "score": 1.0
+            },
+            {
+                "system_create_dtsi": "2019-05-18T17:54:06Z",
+                "system_modified_dtsi": "2019-06-20T19:32:18Z",
+                "has_model_ssim": [
+                    "Thesis"
+                ],
+                "id": "mg74qm42q",
+                "accessControl_ssim": [
+                    "e5e8743e-7e87-455f-8146-1bccab4cf10a"
+                ],
+                "hasRelatedMediaFragment_ssim": [
+                    "x633f131h"
+                ],
+                "hasRelatedImage_ssim": [
+                    "x633f131h"
+                ],
+                "depositor_ssim": [
+                    "rcuellar@colmex.mx"
+                ],
+                "depositor_tesim": [
+                    "rcuellar@colmex.mx"
+                ],
+                "title_tesim": [
+                    "Las imágenes del extranjero y la crítica al neoliberalismo en el discurso del subcomandante Marcos y los comunicados del Ejército Zapatista de Liberación Nacional en Chiapas, México (1994-2000)"
+                ],
+                "date_uploaded_dtsi": "2019-05-18T17:54:06Z",
+                "date_modified_dtsi": "2019-05-18T17:54:06Z",
+                "isPartOf_ssim": [
+                    "admin_set/default"
+                ],
+                "creator_conacyt_tesim": [
+                    "curp: FADT890621MPLRZT00\nfechaNacCons: 1989-06-21T00:00:00-06:00\nidCvuConacyt: 899724\nidIdentificadorCa: CA352698\nnombres: TATIANA\nprimerApellido: FRAGA\nrn: 3172230\nsegundoApellido: DIEZ\n"
+                ],
+                "subject_conacyt_tesim": [
+                    "5"
+                ],
+                "pub_conacyt_tesim": [
+                    "Students",
+                    "Researchers"
+                ],
+                "type_conacyt_tesim": [
+                    "info:eu-repo/semantics/bachelorThesis"
+                ],
+                "director_tesim": [
+                    "Mabire, Bernardo"
+                ],
+                "extension_tesim": [
+                    "116 páginas"
+                ],
+                "other_formats_tesim": [
+                    "39050941597A (DC)",
+                    "39050916576A",
+                    "390509165759 (CE)"
+                ],
+                "degree_program_tesim": [
+                    "Licenciado en Relaciones Internacionales"
+                ],
+                "resource_type_tesim": [
+                    "Tesis de Licenciatura"
+                ],
+                "creator_tesim": [
+                    "Fraga Diez, Tatiana"
+                ],
+                "language_tesim": [
+                    "español"
+                ],
+                "geographic_coverage_tesim": [
+                    "Chiapas (Estado)"
+                ],
+                "temporary_coverage_tesim": [
+                    "Rebelión campesina, 1994-"
+                ],
+                "subject_person_tesim": [
+                    "Marcos. Subcomandante"
+                ],
+                "subject_tesim": [
+                    "Neoliberalismo",
+                    "Opinión pública extranjera",
+                    "Puntos de vista político y social"
+                ],
+                "subject_corporate_tesim": [
+                    "Ejército Zapatista de Liberación Nacional (México)"
+                ],
+                "classification_tesim": [
+                    "322.42097275/F811im"
+                ],
+                "center_tesim": [
+                    "Centro de Estudios Internacionales"
+                ],
+                "license_tesim": [
+                    "http://creativecommons.org/licenses/by-nc-nd/4.0/"
+                ],
+                "rights_statement_tesim": [
+                    "http://rightsstatements.org/vocab/InC-NC/1.0/"
+                ],
+                "date_created_tesim": [
+                    "2014"
+                ],
+                "identifier_tesim": [
+                    "990007217780302716"
+                ],
+                "thumbnail_path_ss": "/downloads/x633f131h?file=thumbnail",
+                "suppressed_bsi": false,
+                "actionable_workflow_roles_ssim": [
+                    "admin_set/default-default-managing",
+                    "admin_set/default-default-approving",
+                    "admin_set/default-default-depositing"
+                ],
+                "workflow_state_name_ssim": [
+                    "deposited"
+                ],
+                "member_ids_ssim": [
+                    "x633f131h"
+                ],
+                "member_of_collections_ssim": [
+                    "Tesis",
+                    "Conacyt"
+                ],
+                "member_of_collection_ids_ssim": [
+                    "bc386j61k",
+                    "fx719m640"
+                ],
+                "file_set_ids_ssim": [
+                    "x633f131h"
+                ],
+                "visibility_ssi": "open",
+                "admin_set_tesim": [
+                    "Default Admin Set"
+                ],
+                "human_readable_type_tesim": [
+                    "Thesis"
+                ],
+                "read_access_group_ssim": [
+                    "public"
+                ],
+                "edit_access_group_ssim": [
+                    "admin"
+                ],
+                "edit_access_person_ssim": [
+                    "rcuellar@colmex.mx"
+                ],
+                "nesting_collection__ancestors_ssim": [
+                    "bc386j61k",
+                    "fx719m640"
+                ],
+                "nesting_collection__parent_ids_ssim": [
+                    "bc386j61k",
+                    "fx719m640"
+                ],
+                "nesting_collection__pathnames_ssim": [
+                    "bc386j61k/mg74qm42q",
+                    "fx719m640/mg74qm42q"
+                ],
+                "nesting_collection__deepest_nested_depth_isi": 2,
+                "_version_": 1642453726505467904,
+                "timestamp": "2019-08-21T05:38:54.853Z",
+                "score": 1.0
+            },
+            {
+                "system_create_dtsi": "2019-05-18T17:53:13Z",
+                "system_modified_dtsi": "2019-06-04T22:15:24Z",
+                "has_model_ssim": [
+                    "Thesis"
+                ],
+                "id": "bc386j609",
+                "accessControl_ssim": [
+                    "ddfd8d9f-1ddd-4e7b-9512-eb7cbed4275d"
+                ],
+                "hasRelatedMediaFragment_ssim": [
+                    "6q182k495"
+                ],
+                "hasRelatedImage_ssim": [
+                    "6q182k495"
+                ],
+                "depositor_ssim": [
+                    "rcuellar@colmex.mx"
+                ],
+                "depositor_tesim": [
+                    "rcuellar@colmex.mx"
+                ],
+                "title_tesim": [
+                    "El Dao de Jing en la República Popular China"
+                ],
+                "date_uploaded_dtsi": "2019-05-18T17:53:13Z",
+                "date_modified_dtsi": "2019-05-18T17:53:13Z",
+                "isPartOf_ssim": [
+                    "admin_set/default"
+                ],
+                "creator_conacyt_tesim": [
+                    "curp: AOIL630330MNERVL04\nfechaNacCons: 1963-03-30T00:00:00-06:00\nidCvuConacyt: 900071\nidIdentificadorCa: CA353173\nnombres: LILJANA\nprimerApellido: ARSOVSKA\nrn: 3172684\nsegundoApellido: IVANOVSKA\n"
+                ],
+                "subject_conacyt_tesim": [
+                    "5"
+                ],
+                "pub_conacyt_tesim": [
+                    "Students",
+                    "Researchers"
+                ],
+                "type_conacyt_tesim": [
+                    "info:eu-repo/semantics/masterThesis"
+                ],
+                "director_tesim": [
+                    "Botton Beja, Flora"
+                ],
+                "extension_tesim": [
+                    "61 páginas"
+                ],
+                "other_formats_tesim": [
+                    "39050813516G",
+                    "39050577139G (CE)"
+                ],
+                "degree_program_tesim": [
+                    "Maestro en Estudios de Asia y África del Norte"
+                ],
+                "resource_type_tesim": [
+                    "Tesis de Maestría"
+                ],
+                "creator_tesim": [
+                    "Arsovska, Liljana"
+                ],
+                "language_tesim": [
+                    "español/chi"
+                ],
+                "geographic_coverage_tesim": [
+                    "China"
+                ],
+                "temporary_coverage_tesim": [
+                    "Dinastía Qin-han, 221 a.C.-220 d.C."
+                ],
+                "subject_tesim": [
+                    "Poesía china",
+                    "Daoismo"
+                ],
+                "classification_tesim": [
+                    "895.11/A783d/"
+                ],
+                "center_tesim": [
+                    "Centro de Estudios de Asia y África"
+                ],
+                "license_tesim": [
+                    "http://creativecommons.org/licenses/by-nc-nd/4.0/"
+                ],
+                "rights_statement_tesim": [
+                    "http://rightsstatements.org/vocab/InC-NC/1.0/"
+                ],
+                "date_created_tesim": [
+                    "1995"
+                ],
+                "identifier_tesim": [
+                    "990003043980302716"
+                ],
+                "thumbnail_path_ss": "/downloads/6q182k495?file=thumbnail",
+                "suppressed_bsi": false,
+                "actionable_workflow_roles_ssim": [
+                    "admin_set/default-default-managing",
+                    "admin_set/default-default-approving",
+                    "admin_set/default-default-depositing"
+                ],
+                "workflow_state_name_ssim": [
+                    "deposited"
+                ],
+                "member_ids_ssim": [
+                    "6q182k495"
+                ],
+                "member_of_collections_ssim": [
+                    "Tesis",
+                    "Conacyt"
+                ],
+                "member_of_collection_ids_ssim": [
+                    "bc386j61k",
+                    "fx719m640"
+                ],
+                "file_set_ids_ssim": [
+                    "6q182k495"
+                ],
+                "visibility_ssi": "open",
+                "admin_set_tesim": [
+                    "Default Admin Set"
+                ],
+                "human_readable_type_tesim": [
+                    "Thesis"
+                ],
+                "read_access_group_ssim": [
+                    "public"
+                ],
+                "edit_access_group_ssim": [
+                    "admin"
+                ],
+                "edit_access_person_ssim": [
+                    "rcuellar@colmex.mx"
+                ],
+                "nesting_collection__ancestors_ssim": [
+                    "bc386j61k",
+                    "fx719m640"
+                ],
+                "nesting_collection__parent_ids_ssim": [
+                    "bc386j61k",
+                    "fx719m640"
+                ],
+                "nesting_collection__pathnames_ssim": [
+                    "bc386j61k/bc386j609",
+                    "fx719m640/bc386j609"
+                ],
+                "nesting_collection__deepest_nested_depth_isi": 2,
+                "_version_": 1642451292449144832,
+                "timestamp": "2019-08-21T05:00:13.557Z",
+                "score": 1.0
+            },
+            {
+                "system_create_dtsi": "2019-05-18T17:52:43Z",
+                "system_modified_dtsi": "2019-06-06T22:26:55Z",
+                "has_model_ssim": [
+                    "Thesis"
+                ],
+                "id": "t148fh453",
+                "accessControl_ssim": [
+                    "af4cf2c8-099a-4025-be28-00a002903baf"
+                ],
+                "hasRelatedMediaFragment_ssim": [
+                    "1c18dg07w"
+                ],
+                "hasRelatedImage_ssim": [
+                    "1c18dg07w"
+                ],
+                "depositor_ssim": [
+                    "rcuellar@colmex.mx"
+                ],
+                "depositor_tesim": [
+                    "rcuellar@colmex.mx"
+                ],
+                "title_tesim": [
+                    "La Orden Hospitalaria de Nuestra Señora de Belén en la monarquía hispánica, 1655-1768"
+                ],
+                "date_uploaded_dtsi": "2019-05-18T17:52:43Z",
+                "date_modified_dtsi": "2019-05-18T17:52:43Z",
+                "isPartOf_ssim": [
+                    "admin_set/default"
+                ],
+                "creator_conacyt_tesim": [
+                    "curp: MORJ830907HPLNMN07\nfechaNacCons: 1983-09-07T00:00:00-06:00\nidCvuConacyt: 395980\nidIdentificadorCa: CA74895\nnombres: JONATAN\nprimerApellido: MONCAYO\nrn: 940039\nsegundoApellido: RAMIREZ\n"
+                ],
+                "subject_conacyt_tesim": [
+                    "4"
+                ],
+                "pub_conacyt_tesim": [
+                    "Students",
+                    "Researchers"
+                ],
+                "type_conacyt_tesim": [
+                    "info:eu-repo/semantics/doctoralThesis"
+                ],
+                "director_tesim": [
+                    "Mazín Gómez, Óscar"
+                ],
+                "extension_tesim": [
+                    "498 páginas"
+                ],
+                "other_formats_tesim": [
+                    "390509642406 (CE)",
+                    "39050964239D",
+                    "390509642417 (DC)"
+                ],
+                "degree_program_tesim": [
+                    "Doctor en Historia"
+                ],
+                "resource_type_tesim": [
+                    "Tesis de Doctorado"
+                ],
+                "creator_tesim": [
+                    "Moncayo Ramírez, Jonatan"
+                ],
+                "language_tesim": [
+                    "español"
+                ],
+                "geographic_coverage_tesim": [
+                    "Perú",
+                    "Guatemala",
+                    "México"
+                ],
+                "temporary_coverage_tesim": [
+                    "Colonia española, 1535-1821"
+                ],
+                "subject_tesim": [
+                    "Hospitales",
+                    "Historia",
+                    "Franciscanos (Orden religiosa)"
+                ],
+                "subject_corporate_tesim": [
+                    "Hospital de Nuestra Señora de Belén y San Francisco Xavier"
+                ],
+                "classification_tesim": [
+                    "259.411/M737or"
+                ],
+                "type_of_illustrations_tesim": [
+                    "ilustraciones, mapas, retratos, planos, fotografías"
+                ],
+                "center_tesim": [
+                    "Centro de Estudios Históricos"
+                ],
+                "license_tesim": [
+                    "http://creativecommons.org/licenses/by-nc-nd/4.0/"
+                ],
+                "rights_statement_tesim": [
+                    "http://rightsstatements.org/vocab/InC-NC/1.0/"
+                ],
+                "date_created_tesim": [
+                    "2018"
+                ],
+                "identifier_tesim": [
+                    "999568489802716"
+                ],
+                "thumbnail_path_ss": "/downloads/1c18dg07w?file=thumbnail",
+                "suppressed_bsi": false,
+                "actionable_workflow_roles_ssim": [
+                    "admin_set/default-default-managing",
+                    "admin_set/default-default-approving",
+                    "admin_set/default-default-depositing"
+                ],
+                "workflow_state_name_ssim": [
+                    "deposited"
+                ],
+                "member_ids_ssim": [
+                    "1c18dg07w"
+                ],
+                "member_of_collections_ssim": [
+                    "Tesis",
+                    "Conacyt"
+                ],
+                "member_of_collection_ids_ssim": [
+                    "bc386j61k",
+                    "fx719m640"
+                ],
+                "file_set_ids_ssim": [
+                    "1c18dg07w"
+                ],
+                "visibility_ssi": "open",
+                "admin_set_tesim": [
+                    "Default Admin Set"
+                ],
+                "human_readable_type_tesim": [
+                    "Thesis"
+                ],
+                "read_access_group_ssim": [
+                    "public"
+                ],
+                "edit_access_group_ssim": [
+                    "admin"
+                ],
+                "edit_access_person_ssim": [
+                    "rcuellar@colmex.mx"
+                ],
+                "nesting_collection__ancestors_ssim": [
+                    "bc386j61k",
+                    "fx719m640"
+                ],
+                "nesting_collection__parent_ids_ssim": [
+                    "bc386j61k",
+                    "fx719m640"
+                ],
+                "nesting_collection__pathnames_ssim": [
+                    "bc386j61k/t148fh453",
+                    "fx719m640/t148fh453"
+                ],
+                "nesting_collection__deepest_nested_depth_isi": 2,
+                "_version_": 1642451722859184128,
+                "timestamp": "2019-08-21T05:07:04.028Z",
+                "score": 1.0
+            },
+            {
+                "system_create_dtsi": "2019-05-18T17:52:10Z",
+                "system_modified_dtsi": "2019-06-04T22:20:23Z",
+                "has_model_ssim": [
+                    "Thesis"
+                ],
+                "id": "h415p982c",
+                "accessControl_ssim": [
+                    "6067d7e7-f1ef-48c4-b8f6-7e8a1d249819"
+                ],
+                "hasRelatedMediaFragment_ssim": [
+                    "3t945r204"
+                ],
+                "hasRelatedImage_ssim": [
+                    "3t945r204"
+                ],
+                "depositor_ssim": [
+                    "rcuellar@colmex.mx"
+                ],
+                "depositor_tesim": [
+                    "rcuellar@colmex.mx"
+                ],
+                "title_tesim": [
+                    "Un modelo APT para el caso de México"
+                ],
+                "date_uploaded_dtsi": "2019-05-18T17:52:10Z",
+                "date_modified_dtsi": "2019-05-18T17:52:10Z",
+                "isPartOf_ssim": [
+                    "admin_set/default"
+                ],
+                "subject_conacyt_tesim": [
+                    "5"
+                ],
+                "pub_conacyt_tesim": [
+                    "Students",
+                    "Researchers"
+                ],
+                "type_conacyt_tesim": [
+                    "info:eu-repo/semantics/masterDegreeWork"
+                ],
+                "director_tesim": [
+                    "Urzúa, Carlos M."
+                ],
+                "extension_tesim": [
+                    "58 páginas"
+                ],
+                "other_formats_tesim": [
+                    "390506139550",
+                    "39050613954% (CE)"
+                ],
+                "degree_program_tesim": [
+                    "Maestro en Economía"
+                ],
+                "resource_type_tesim": [
+                    "Trabajo de investigación de Maestría"
+                ],
+                "creator_tesim": [
+                    "Aguilera Aburto, Nelly"
+                ],
+                "language_tesim": [
+                    "español"
+                ],
+                "geographic_coverage_tesim": [
+                    "México"
+                ],
+                "subject_tesim": [
+                    "Modelos matemáticos",
+                    "Precios"
+                ],
+                "classification_tesim": [
+                    "332.413/A2831m/"
+                ],
+                "center_tesim": [
+                    "Centro de Estudios Económicos"
+                ],
+                "license_tesim": [
+                    "http://creativecommons.org/licenses/by-nc-nd/4.0/"
+                ],
+                "rights_statement_tesim": [
+                    "http://rightsstatements.org/vocab/InC-NC/1.0/"
+                ],
+                "date_created_tesim": [
+                    "1996"
+                ],
+                "identifier_tesim": [
+                    "990003226250302716"
+                ],
+                "thumbnail_path_ss": "/downloads/3t945r204?file=thumbnail",
+                "suppressed_bsi": false,
+                "actionable_workflow_roles_ssim": [
+                    "admin_set/default-default-managing",
+                    "admin_set/default-default-approving",
+                    "admin_set/default-default-depositing"
+                ],
+                "workflow_state_name_ssim": [
+                    "deposited"
+                ],
+                "member_ids_ssim": [
+                    "3t945r204"
+                ],
+                "member_of_collections_ssim": [
+                    "Tesis"
+                ],
+                "member_of_collection_ids_ssim": [
+                    "bc386j61k"
+                ],
+                "file_set_ids_ssim": [
+                    "3t945r204"
+                ],
+                "visibility_ssi": "open",
+                "admin_set_tesim": [
+                    "Default Admin Set"
+                ],
+                "human_readable_type_tesim": [
+                    "Thesis"
+                ],
+                "read_access_group_ssim": [
+                    "public"
+                ],
+                "edit_access_group_ssim": [
+                    "admin"
+                ],
+                "edit_access_person_ssim": [
+                    "rcuellar@colmex.mx"
+                ],
+                "nesting_collection__ancestors_ssim": [
+                    "bc386j61k"
+                ],
+                "nesting_collection__parent_ids_ssim": [
+                    "bc386j61k"
+                ],
+                "nesting_collection__pathnames_ssim": [
+                    "bc386j61k/h415p982c"
+                ],
+                "nesting_collection__deepest_nested_depth_isi": 2,
+                "_version_": 1642436888979570688,
+                "timestamp": "2019-08-21T01:11:17.337Z",
+                "score": 1.0
+            },
+            {
+                "system_create_dtsi": "2019-05-18T17:51:26Z",
+                "system_modified_dtsi": "2019-06-04T22:09:54Z",
+                "has_model_ssim": [
+                    "Thesis"
+                ],
+                "id": "fq977v10d",
+                "accessControl_ssim": [
+                    "79cbd21f-e3f8-4fcb-8e6c-6e81a3400342"
+                ],
+                "hasRelatedMediaFragment_ssim": [
+                    "m039k527j"
+                ],
+                "hasRelatedImage_ssim": [
+                    "m039k527j"
+                ],
+                "depositor_ssim": [
+                    "rcuellar@colmex.mx"
+                ],
+                "depositor_tesim": [
+                    "rcuellar@colmex.mx"
+                ],
+                "title_tesim": [
+                    "Credibilidad e independencia del Banco Central"
+                ],
+                "date_uploaded_dtsi": "2019-05-18T17:51:26Z",
+                "date_modified_dtsi": "2019-05-18T17:51:26Z",
+                "isPartOf_ssim": [
+                    "admin_set/default"
+                ],
+                "subject_conacyt_tesim": [
+                    "5"
+                ],
+                "pub_conacyt_tesim": [
+                    "Students",
+                    "Researchers"
+                ],
+                "type_conacyt_tesim": [
+                    "info:eu-repo/semantics/masterDegreeWork"
+                ],
+                "director_tesim": [
+                    "Sempere, Jaime"
+                ],
+                "extension_tesim": [
+                    "59 páginas"
+                ],
+                "other_formats_tesim": [
+                    "39050563118X",
+                    "390505743083 (CE)"
+                ],
+                "degree_program_tesim": [
+                    "Maestro en Economía"
+                ],
+                "resource_type_tesim": [
+                    "Trabajo de investigación de Maestría"
+                ],
+                "creator_tesim": [
+                    "Chávez Navarrete, Karina"
+                ],
+                "language_tesim": [
+                    "español"
+                ],
+                "subject_tesim": [
+                    "Indice de precios",
+                    "Bancos centrales",
+                    "Inflación (Finanzas)"
+                ],
+                "classification_tesim": [
+                    "332.110151/Ch5125c/"
+                ],
+                "type_of_illustrations_tesim": [
+                    "ilustraciones"
+                ],
+                "center_tesim": [
+                    "Centro de Estudios Económicos"
+                ],
+                "license_tesim": [
+                    "http://creativecommons.org/licenses/by-nc-nd/4.0/"
+                ],
+                "rights_statement_tesim": [
+                    "http://rightsstatements.org/vocab/InC-NC/1.0/"
+                ],
+                "date_created_tesim": [
+                    "1994"
+                ],
+                "identifier_tesim": [
+                    "990002980810302716"
+                ],
+                "thumbnail_path_ss": "/downloads/m039k527j?file=thumbnail",
+                "suppressed_bsi": false,
+                "actionable_workflow_roles_ssim": [
+                    "admin_set/default-default-managing",
+                    "admin_set/default-default-approving",
+                    "admin_set/default-default-depositing"
+                ],
+                "workflow_state_name_ssim": [
+                    "deposited"
+                ],
+                "member_ids_ssim": [
+                    "m039k527j"
+                ],
+                "member_of_collections_ssim": [
+                    "Tesis"
+                ],
+                "member_of_collection_ids_ssim": [
+                    "bc386j61k"
+                ],
+                "file_set_ids_ssim": [
+                    "m039k527j"
+                ],
+                "visibility_ssi": "open",
+                "admin_set_tesim": [
+                    "Default Admin Set"
+                ],
+                "human_readable_type_tesim": [
+                    "Thesis"
+                ],
+                "read_access_group_ssim": [
+                    "public"
+                ],
+                "edit_access_group_ssim": [
+                    "admin"
+                ],
+                "edit_access_person_ssim": [
+                    "rcuellar@colmex.mx"
+                ],
+                "nesting_collection__ancestors_ssim": [
+                    "bc386j61k"
+                ],
+                "nesting_collection__parent_ids_ssim": [
+                    "bc386j61k"
+                ],
+                "nesting_collection__pathnames_ssim": [
+                    "bc386j61k/fq977v10d"
+                ],
+                "nesting_collection__deepest_nested_depth_isi": 2,
+                "_version_": 1642436887186505728,
+                "timestamp": "2019-08-21T01:11:15.628Z",
+                "score": 1.0
+            },
+            {
+                "system_create_dtsi": "2019-05-18T17:50:50Z",
+                "system_modified_dtsi": "2019-06-20T19:32:36Z",
+                "has_model_ssim": [
+                    "Thesis"
+                ],
+                "id": "r207tp72c",
+                "accessControl_ssim": [
+                    "bad6565a-b22d-4db0-9f37-86df18360a2c"
+                ],
+                "hasRelatedMediaFragment_ssim": [
+                    "nv935305k"
+                ],
+                "hasRelatedImage_ssim": [
+                    "nv935305k"
+                ],
+                "depositor_ssim": [
+                    "rcuellar@colmex.mx"
+                ],
+                "depositor_tesim": [
+                    "rcuellar@colmex.mx"
+                ],
+                "title_tesim": [
+                    "Hyman Minsky y su hipótesis sobre la inestabilidad financiera"
+                ],
+                "date_uploaded_dtsi": "2019-05-18T17:50:50Z",
+                "date_modified_dtsi": "2019-05-18T17:50:50Z",
+                "isPartOf_ssim": [
+                    "admin_set/default"
+                ],
+                "subject_conacyt_tesim": [
+                    "5"
+                ],
+                "pub_conacyt_tesim": [
+                    "Students",
+                    "Researchers"
+                ],
+                "type_conacyt_tesim": [
+                    "info:eu-repo/semantics/masterDegreeWork"
+                ],
+                "director_tesim": [
+                    "Kurezyn B., Sergio"
+                ],
+                "extension_tesim": [
+                    "52 páginas"
+                ],
+                "other_formats_tesim": [
+                    "39050619661D (CE)",
+                    "39050619662E"
+                ],
+                "degree_program_tesim": [
+                    "Maestro en Economía"
+                ],
+                "resource_type_tesim": [
+                    "Trabajo de investigación de Maestría"
+                ],
+                "creator_tesim": [
+                    "López López, Héctor Manuel"
+                ],
+                "language_tesim": [
+                    "español"
+                ],
+                "subject_person_tesim": [
+                    "Minsky, Hyman P."
+                ],
+                "subject_tesim": [
+                    "Economía keynesiana",
+                    "Ciclos económicos",
+                    "Crisis financieras"
+                ],
+                "classification_tesim": [
+                    "330.156/L8644h/"
+                ],
+                "other_related_persons_tesim": [
+                    "Nadal Egea, Alejandro (revisor)"
+                ],
+                "type_of_illustrations_tesim": [
+                    "ilustraciones"
+                ],
+                "center_tesim": [
+                    "Centro de Estudios Económicos"
+                ],
+                "license_tesim": [
+                    "http://creativecommons.org/licenses/by-nc-nd/4.0/"
+                ],
+                "rights_statement_tesim": [
+                    "http://rightsstatements.org/vocab/InC-NC/1.0/"
+                ],
+                "date_created_tesim": [
+                    "1992"
+                ],
+                "identifier_tesim": [
+                    "990003260980302716"
+                ],
+                "thumbnail_path_ss": "/downloads/nv935305k?file=thumbnail",
+                "suppressed_bsi": false,
+                "actionable_workflow_roles_ssim": [
+                    "admin_set/default-default-managing",
+                    "admin_set/default-default-approving",
+                    "admin_set/default-default-depositing"
+                ],
+                "workflow_state_name_ssim": [
+                    "deposited"
+                ],
+                "member_ids_ssim": [
+                    "nv935305k"
+                ],
+                "member_of_collections_ssim": [
+                    "Tesis"
+                ],
+                "member_of_collection_ids_ssim": [
+                    "bc386j61k"
+                ],
+                "file_set_ids_ssim": [
+                    "nv935305k"
+                ],
+                "visibility_ssi": "open",
+                "admin_set_tesim": [
+                    "Default Admin Set"
+                ],
+                "human_readable_type_tesim": [
+                    "Thesis"
+                ],
+                "read_access_group_ssim": [
+                    "public"
+                ],
+                "edit_access_group_ssim": [
+                    "admin"
+                ],
+                "edit_access_person_ssim": [
+                    "rcuellar@colmex.mx"
+                ],
+                "nesting_collection__ancestors_ssim": [
+                    "bc386j61k"
+                ],
+                "nesting_collection__parent_ids_ssim": [
+                    "bc386j61k"
+                ],
+                "nesting_collection__pathnames_ssim": [
+                    "bc386j61k/r207tp72c"
+                ],
+                "nesting_collection__deepest_nested_depth_isi": 2,
+                "_version_": 1642436022837968896,
+                "timestamp": "2019-08-21T00:57:31.321Z",
+                "score": 1.0
+            },
+            {
+                "system_create_dtsi": "2019-05-18T17:50:22Z",
+                "system_modified_dtsi": "2019-06-05T01:04:42Z",
+                "has_model_ssim": [
+                    "Thesis"
+                ],
+                "id": "cv43nx233",
+                "accessControl_ssim": [
+                    "1e688164-2e99-459c-b5d2-85ab4f992f5c"
+                ],
+                "hasRelatedMediaFragment_ssim": [
+                    "z029p511d"
+                ],
+                "hasRelatedImage_ssim": [
+                    "z029p511d"
+                ],
+                "depositor_ssim": [
+                    "rcuellar@colmex.mx"
+                ],
+                "depositor_tesim": [
+                    "rcuellar@colmex.mx"
+                ],
+                "title_tesim": [
+                    "Medición multidimensional de la pobreza a través de una matriz de interacciones"
+                ],
+                "date_uploaded_dtsi": "2019-05-18T17:50:22Z",
+                "date_modified_dtsi": "2019-05-18T17:50:22Z",
+                "isPartOf_ssim": [
+                    "admin_set/default"
+                ],
+                "creator_conacyt_tesim": [
+                    "curp: OESL910223HYNRNS07\nfechaNacCons: 1991-02-23T00:00:00-06:00\nidCvuConacyt: 703571\nidIdentificadorCa: CA154011\nnombres: LUIS ALFONSO\nprimerApellido: ORTEGA\nrn: 909414\nsegundoApellido: SAINZ\n"
+                ],
+                "subject_conacyt_tesim": [
+                    "5"
+                ],
+                "pub_conacyt_tesim": [
+                    "Students",
+                    "Researchers"
+                ],
+                "type_conacyt_tesim": [
+                    "info:eu-repo/semantics/masterDegreeWork"
+                ],
+                "director_tesim": [
+                    "Yúnez-Naude, Antonio"
+                ],
+                "extension_tesim": [
+                    "47 páginas"
+                ],
+                "other_formats_tesim": [
+                    "39050920280E (CE)",
+                    "39050949423L (DC)",
+                    "390509508254"
+                ],
+                "degree_program_tesim": [
+                    "Maestro en Economía"
+                ],
+                "resource_type_tesim": [
+                    "Trabajo de investigación de Maestría"
+                ],
+                "creator_tesim": [
+                    "Ortega Sáinz, Luis Alfonso"
+                ],
+                "language_tesim": [
+                    "español"
+                ],
+                "subject_tesim": [
+                    "Medición",
+                    "Modelos matemáticos",
+                    "Pobreza"
+                ],
+                "classification_tesim": [
+                    "339.46/Or771m"
+                ],
+                "center_tesim": [
+                    "Centro de Estudios Económicos"
+                ],
+                "license_tesim": [
+                    "http://creativecommons.org/licenses/by-nc-nd/4.0/"
+                ],
+                "rights_statement_tesim": [
+                    "http://rightsstatements.org/vocab/InC-NC/1.0/"
+                ],
+                "date_created_tesim": [
+                    "2017"
+                ],
+                "identifier_tesim": [
+                    "999556090002716"
+                ],
+                "thumbnail_path_ss": "/downloads/z029p511d?file=thumbnail",
+                "suppressed_bsi": false,
+                "actionable_workflow_roles_ssim": [
+                    "admin_set/default-default-managing",
+                    "admin_set/default-default-approving",
+                    "admin_set/default-default-depositing"
+                ],
+                "workflow_state_name_ssim": [
+                    "deposited"
+                ],
+                "member_ids_ssim": [
+                    "z029p511d"
+                ],
+                "member_of_collections_ssim": [
+                    "Tesis",
+                    "Conacyt"
+                ],
+                "member_of_collection_ids_ssim": [
+                    "bc386j61k",
+                    "fx719m640"
+                ],
+                "file_set_ids_ssim": [
+                    "z029p511d"
+                ],
+                "visibility_ssi": "open",
+                "admin_set_tesim": [
+                    "Default Admin Set"
+                ],
+                "human_readable_type_tesim": [
+                    "Thesis"
+                ],
+                "read_access_group_ssim": [
+                    "public"
+                ],
+                "edit_access_group_ssim": [
+                    "admin"
+                ],
+                "edit_access_person_ssim": [
+                    "rcuellar@colmex.mx"
+                ],
+                "nesting_collection__ancestors_ssim": [
+                    "bc386j61k",
+                    "fx719m640"
+                ],
+                "nesting_collection__parent_ids_ssim": [
+                    "bc386j61k",
+                    "fx719m640"
+                ],
+                "nesting_collection__pathnames_ssim": [
+                    "bc386j61k/cv43nx233",
+                    "fx719m640/cv43nx233"
+                ],
+                "nesting_collection__deepest_nested_depth_isi": 2,
+                "_version_": 1642452052527284224,
+                "timestamp": "2019-08-21T05:12:18.424Z",
+                "score": 1.0
+            },
+            {
+                "system_create_dtsi": "2019-05-18T17:50:05Z",
+                "system_modified_dtsi": "2019-06-05T00:55:16Z",
+                "has_model_ssim": [
+                    "Thesis"
+                ],
+                "id": "9880vr35n",
+                "accessControl_ssim": [
+                    "f7b2a1d4-8ec2-45ae-88cf-f9e65b2fa512"
+                ],
+                "hasRelatedMediaFragment_ssim": [
+                    "rj4304838"
+                ],
+                "hasRelatedImage_ssim": [
+                    "rj4304838"
+                ],
+                "depositor_ssim": [
+                    "rcuellar@colmex.mx"
+                ],
+                "depositor_tesim": [
+                    "rcuellar@colmex.mx"
+                ],
+                "title_tesim": [
+                    "Política ambiental bajo competencia imperfecta en el comercio internacional y contaminación global"
+                ],
+                "date_uploaded_dtsi": "2019-05-18T17:50:05Z",
+                "date_modified_dtsi": "2019-05-18T17:50:05Z",
+                "isPartOf_ssim": [
+                    "admin_set/default"
+                ],
+                "creator_conacyt_tesim": [
+                    "curp: JOGD910722MMCRMN09\nfechaNacCons: 1991-07-22T00:00:00-06:00\nidCvuConacyt: 702619\nidIdentificadorCa: CA153554\nnombres: DIANA NOHEMI\nprimerApellido: JORDAN\nrn: 932713\nsegundoApellido: GOMEZ\n"
+                ],
+                "subject_conacyt_tesim": [
+                    "5"
+                ],
+                "pub_conacyt_tesim": [
+                    "Students",
+                    "Researchers"
+                ],
+                "type_conacyt_tesim": [
+                    "info:eu-repo/semantics/masterDegreeWork"
+                ],
+                "director_tesim": [
+                    "Gama Velázquez, Adriana"
+                ],
+                "extension_tesim": [
+                    "vi, 30 páginas"
+                ],
+                "other_formats_tesim": [
+                    "390509598094 (DC)",
+                    "39050959810X",
+                    "39050959811Y (CE)"
+                ],
+                "degree_program_tesim": [
+                    "Maestro en Economía"
+                ],
+                "resource_type_tesim": [
+                    "Trabajo de investigación de Maestría"
+                ],
+                "creator_tesim": [
+                    "Jordán Gómez, Diana Nohemí"
+                ],
+                "language_tesim": [
+                    "español"
+                ],
+                "subject_tesim": [
+                    "Comercio internacional",
+                    "Política ambiental",
+                    "Contaminación",
+                    "Aspectos económicos"
+                ],
+                "classification_tesim": [
+                    "f/382.015118/J823p"
+                ],
+                "type_of_illustrations_tesim": [
+                    "gráficas"
+                ],
+                "center_tesim": [
+                    "Centro de Estudios Económicos"
+                ],
+                "license_tesim": [
+                    "http://creativecommons.org/licenses/by-nc-nd/4.0/"
+                ],
+                "rights_statement_tesim": [
+                    "http://rightsstatements.org/vocab/InC-NC/1.0/"
+                ],
+                "date_created_tesim": [
+                    "2017"
+                ],
+                "identifier_tesim": [
+                    "999539482302716"
+                ],
+                "thumbnail_path_ss": "/downloads/rj4304838?file=thumbnail",
+                "suppressed_bsi": false,
+                "actionable_workflow_roles_ssim": [
+                    "admin_set/default-default-managing",
+                    "admin_set/default-default-approving",
+                    "admin_set/default-default-depositing"
+                ],
+                "workflow_state_name_ssim": [
+                    "deposited"
+                ],
+                "member_ids_ssim": [
+                    "rj4304838"
+                ],
+                "member_of_collections_ssim": [
+                    "Tesis",
+                    "Conacyt"
+                ],
+                "member_of_collection_ids_ssim": [
+                    "bc386j61k",
+                    "fx719m640"
+                ],
+                "file_set_ids_ssim": [
+                    "rj4304838"
+                ],
+                "visibility_ssi": "open",
+                "admin_set_tesim": [
+                    "Default Admin Set"
+                ],
+                "human_readable_type_tesim": [
+                    "Thesis"
+                ],
+                "read_access_group_ssim": [
+                    "public"
+                ],
+                "edit_access_group_ssim": [
+                    "admin"
+                ],
+                "edit_access_person_ssim": [
+                    "rcuellar@colmex.mx"
+                ],
+                "nesting_collection__ancestors_ssim": [
+                    "bc386j61k",
+                    "fx719m640"
+                ],
+                "nesting_collection__parent_ids_ssim": [
+                    "bc386j61k",
+                    "fx719m640"
+                ],
+                "nesting_collection__pathnames_ssim": [
+                    "bc386j61k/9880vr35n",
+                    "fx719m640/9880vr35n"
+                ],
+                "nesting_collection__deepest_nested_depth_isi": 2,
+                "_version_": 1642453395078905856,
+                "timestamp": "2019-08-21T05:33:38.781Z",
+                "score": 1.0
+            },
+            {
+                "system_create_dtsi": "2019-05-18T17:49:29Z",
+                "system_modified_dtsi": "2019-06-05T00:48:28Z",
+                "has_model_ssim": [
+                    "Thesis"
+                ],
+                "id": "4m90dv76w",
+                "accessControl_ssim": [
+                    "86a6d974-d804-45a4-b520-97be814ddcb3"
+                ],
+                "hasRelatedMediaFragment_ssim": [
+                    "02870w20s"
+                ],
+                "hasRelatedImage_ssim": [
+                    "02870w20s"
+                ],
+                "depositor_ssim": [
+                    "rcuellar@colmex.mx"
+                ],
+                "depositor_tesim": [
+                    "rcuellar@colmex.mx"
+                ],
+                "title_tesim": [
+                    "Optimal simple monetary policy rules and equilibrium determinacy under informality"
+                ],
+                "date_uploaded_dtsi": "2019-05-18T17:49:29Z",
+                "date_modified_dtsi": "2019-05-18T17:49:29Z",
+                "isPartOf_ssim": [
+                    "admin_set/default"
+                ],
+                "creator_conacyt_tesim": [
+                    "curp: DIED890802HDFZSN04\nfechaNacCons: 1989-08-02T00:00:00-06:00\nidCvuConacyt: 624375\nidIdentificadorCa: CA133227\nnombres: DANIEL EDUARDO\nprimerApellido: DIAZ\nrn: 960754\nsegundoApellido: ESPINOSA\n"
+                ],
+                "subject_conacyt_tesim": [
+                    "5"
+                ],
+                "pub_conacyt_tesim": [
+                    "Students",
+                    "Researchers"
+                ],
+                "type_conacyt_tesim": [
+                    "info:eu-repo/semantics/masterDegreeWork"
+                ],
+                "director_tesim": [
+                    "McKnight, Stephen"
+                ],
+                "extension_tesim": [
+                    "59 páginas"
+                ],
+                "other_formats_tesim": [
+                    "390509513979",
+                    "39050951398A (CE)",
+                    "390509513968 (DC)"
+                ],
+                "degree_program_tesim": [
+                    "Maestro en Economía"
+                ],
+                "resource_type_tesim": [
+                    "Trabajo de investigación de Maestría"
+                ],
+                "creator_tesim": [
+                    "Díaz Espinosa, Daniel Eduardo"
+                ],
+                "language_tesim": [
+                    "inglés"
+                ],
+                "subject_tesim": [
+                    "Política monetaria",
+                    "Mercado de trabajo",
+                    "Sector informal (Economía)"
+                ],
+                "classification_tesim": [
+                    "331.12/D277op"
+                ],
+                "type_of_illustrations_tesim": [
+                    "ilustraciones, tablas, gráficas"
+                ],
+                "center_tesim": [
+                    "Centro de Estudios Económicos"
+                ],
+                "license_tesim": [
+                    "http://creativecommons.org/licenses/by-nc-nd/4.0/"
+                ],
+                "rights_statement_tesim": [
+                    "http://rightsstatements.org/vocab/InC-NC/1.0/"
+                ],
+                "date_created_tesim": [
+                    "2016"
+                ],
+                "identifier_tesim": [
+                    "999504046502716"
+                ],
+                "thumbnail_path_ss": "/downloads/02870w20s?file=thumbnail",
+                "suppressed_bsi": false,
+                "actionable_workflow_roles_ssim": [
+                    "admin_set/default-default-managing",
+                    "admin_set/default-default-approving",
+                    "admin_set/default-default-depositing"
+                ],
+                "workflow_state_name_ssim": [
+                    "deposited"
+                ],
+                "member_ids_ssim": [
+                    "02870w20s"
+                ],
+                "member_of_collections_ssim": [
+                    "Tesis",
+                    "Conacyt"
+                ],
+                "member_of_collection_ids_ssim": [
+                    "bc386j61k",
+                    "fx719m640"
+                ],
+                "file_set_ids_ssim": [
+                    "02870w20s"
+                ],
+                "visibility_ssi": "open",
+                "admin_set_tesim": [
+                    "Default Admin Set"
+                ],
+                "human_readable_type_tesim": [
+                    "Thesis"
+                ],
+                "read_access_group_ssim": [
+                    "public"
+                ],
+                "edit_access_group_ssim": [
+                    "admin"
+                ],
+                "edit_access_person_ssim": [
+                    "rcuellar@colmex.mx"
+                ],
+                "nesting_collection__ancestors_ssim": [
+                    "bc386j61k",
+                    "fx719m640"
+                ],
+                "nesting_collection__parent_ids_ssim": [
+                    "bc386j61k",
+                    "fx719m640"
+                ],
+                "nesting_collection__pathnames_ssim": [
+                    "bc386j61k/4m90dv76w",
+                    "fx719m640/4m90dv76w"
+                ],
+                "nesting_collection__deepest_nested_depth_isi": 2,
+                "_version_": 1642453397025062912,
+                "timestamp": "2019-08-21T05:33:40.637Z",
+                "score": 1.0
+            },
+            {
+                "system_create_dtsi": "2019-05-18T17:48:41Z",
+                "system_modified_dtsi": "2019-06-05T00:45:30Z",
+                "has_model_ssim": [
+                    "Thesis"
+                ],
+                "id": "d791sg55d",
+                "accessControl_ssim": [
+                    "7c11a589-6507-4751-836e-663192ed1870"
+                ],
+                "hasRelatedMediaFragment_ssim": [
+                    "bn999707r"
+                ],
+                "hasRelatedImage_ssim": [
+                    "bn999707r"
+                ],
+                "depositor_ssim": [
+                    "rcuellar@colmex.mx"
+                ],
+                "depositor_tesim": [
+                    "rcuellar@colmex.mx"
+                ],
+                "title_tesim": [
+                    "The impact of emission taxes on the adoption of pollution-reducing technologies in a duopoly"
+                ],
+                "date_uploaded_dtsi": "2019-05-18T17:48:41Z",
+                "date_modified_dtsi": "2019-05-18T17:48:41Z",
+                "isPartOf_ssim": [
+                    "admin_set/default"
+                ],
+                "creator_conacyt_tesim": [
+                    "curp: RALC910327HMNNZR04\nfechaNacCons: 1991-03-27T00:00:00-06:00\nidCvuConacyt: 622920\nidIdentificadorCa: CA132553\nnombres: CARLOS\nprimerApellido: RANGEL\nrn: 978518\nsegundoApellido: LEZAMA\n"
+                ],
+                "subject_conacyt_tesim": [
+                    "5"
+                ],
+                "pub_conacyt_tesim": [
+                    "Students",
+                    "Researchers"
+                ],
+                "type_conacyt_tesim": [
+                    "info:eu-repo/semantics/masterDegreeWork"
+                ],
+                "director_tesim": [
+                    "Gama Velázquez, Adriana"
+                ],
+                "extension_tesim": [
+                    "36 páginas"
+                ],
+                "other_formats_tesim": [
+                    "39050948659Z",
+                    "39050951371Z (DC)",
+                    "39050948660S (CE)"
+                ],
+                "degree_program_tesim": [
+                    "Maestro en Economía"
+                ],
+                "resource_type_tesim": [
+                    "Trabajo de investigación de Maestría"
+                ],
+                "creator_tesim": [
+                    "Rangel Lezama, Carlos"
+                ],
+                "language_tesim": [
+                    "inglés"
+                ],
+                "subject_tesim": [
+                    "Impuestos al impacto ambiental",
+                    "Modelos matemáticos",
+                    "Gastos del impacto ambiental"
+                ],
+                "classification_tesim": [
+                    "f/336.27/R1965im"
+                ],
+                "type_of_illustrations_tesim": [
+                    "gráficas"
+                ],
+                "center_tesim": [
+                    "Centro de Estudios Económicos"
+                ],
+                "license_tesim": [
+                    "http://creativecommons.org/licenses/by-nc-nd/4.0/"
+                ],
+                "rights_statement_tesim": [
+                    "http://rightsstatements.org/vocab/InC-NC/1.0/"
+                ],
+                "date_created_tesim": [
+                    "2016"
+                ],
+                "identifier_tesim": [
+                    "999504047302716"
+                ],
+                "thumbnail_path_ss": "/downloads/bn999707r?file=thumbnail",
+                "suppressed_bsi": false,
+                "actionable_workflow_roles_ssim": [
+                    "admin_set/default-default-managing",
+                    "admin_set/default-default-approving",
+                    "admin_set/default-default-depositing"
+                ],
+                "workflow_state_name_ssim": [
+                    "deposited"
+                ],
+                "member_ids_ssim": [
+                    "bn999707r"
+                ],
+                "member_of_collections_ssim": [
+                    "Tesis",
+                    "Conacyt"
+                ],
+                "member_of_collection_ids_ssim": [
+                    "bc386j61k",
+                    "fx719m640"
+                ],
+                "file_set_ids_ssim": [
+                    "bn999707r"
+                ],
+                "visibility_ssi": "open",
+                "admin_set_tesim": [
+                    "Default Admin Set"
+                ],
+                "human_readable_type_tesim": [
+                    "Thesis"
+                ],
+                "read_access_group_ssim": [
+                    "public"
+                ],
+                "edit_access_group_ssim": [
+                    "admin"
+                ],
+                "edit_access_person_ssim": [
+                    "rcuellar@colmex.mx"
+                ],
+                "nesting_collection__ancestors_ssim": [
+                    "bc386j61k",
+                    "fx719m640"
+                ],
+                "nesting_collection__parent_ids_ssim": [
+                    "bc386j61k",
+                    "fx719m640"
+                ],
+                "nesting_collection__pathnames_ssim": [
+                    "bc386j61k/d791sg55d",
+                    "fx719m640/d791sg55d"
+                ],
+                "nesting_collection__deepest_nested_depth_isi": 2,
+                "_version_": 1642452045417938944,
+                "timestamp": "2019-08-21T05:12:11.643Z",
+                "score": 1.0
+            },
+            {
+                "system_create_dtsi": "2019-05-18T17:48:09Z",
+                "system_modified_dtsi": "2019-06-05T00:37:44Z",
+                "has_model_ssim": [
+                    "Thesis"
+                ],
+                "id": "w0892b303",
+                "accessControl_ssim": [
+                    "28b06cbd-4b38-4a5c-8520-58df4a9af1eb"
+                ],
+                "hasRelatedMediaFragment_ssim": [
+                    "1v53jx30r"
+                ],
+                "hasRelatedImage_ssim": [
+                    "1v53jx30r"
+                ],
+                "depositor_ssim": [
+                    "rcuellar@colmex.mx"
+                ],
+                "depositor_tesim": [
+                    "rcuellar@colmex.mx"
+                ],
+                "title_tesim": [
+                    "Deuda soberana y costo político de recaudación fiscal con un gobierno miope"
+                ],
+                "date_uploaded_dtsi": "2019-05-18T17:48:09Z",
+                "date_modified_dtsi": "2019-05-18T17:48:09Z",
+                "isPartOf_ssim": [
+                    "admin_set/default"
+                ],
+                "creator_conacyt_tesim": [
+                    "curp: GALM870809MDFRPN04\nfechaNacCons: 1987-08-09T00:00:00-06:00\nidIdentificadorCa: CA96333\nnombres: MONICA ALTAGRACIA\nprimerApellido: GARCIA\nrn: 963422\nsegundoApellido: LOPEZ\n"
+                ],
+                "subject_conacyt_tesim": [
+                    "5"
+                ],
+                "pub_conacyt_tesim": [
+                    "Students",
+                    "Researchers"
+                ],
+                "type_conacyt_tesim": [
+                    "info:eu-repo/semantics/masterDegreeWork"
+                ],
+                "director_tesim": [
+                    "Fernández Ruiz, Jorge"
+                ],
+                "extension_tesim": [
+                    "29 páginas"
+                ],
+                "other_formats_tesim": [
+                    "39050929713I",
+                    "39050929712H",
+                    "39050935949P (DC)"
+                ],
+                "degree_program_tesim": [
+                    "Maestro en Economía"
+                ],
+                "resource_type_tesim": [
+                    "Trabajo de investigación de Maestría"
+                ],
+                "creator_tesim": [
+                    "García López, Mónica Altagracia"
+                ],
+                "language_tesim": [
+                    "español"
+                ],
+                "geographic_coverage_tesim": [
+                    "México"
+                ],
+                "subject_tesim": [
+                    "Aspectos políticos",
+                    "Política fiscal",
+                    "Recaudación de impuestos",
+                    "Deuda exterior"
+                ],
+                "classification_tesim": [
+                    "336.3433/G2165d"
+                ],
+                "type_of_illustrations_tesim": [
+                    "ilustraciones, gráficas"
+                ],
+                "center_tesim": [
+                    "Centro de Estudios Económicos"
+                ],
+                "license_tesim": [
+                    "http://creativecommons.org/licenses/by-nc-nd/4.0/"
+                ],
+                "rights_statement_tesim": [
+                    "http://rightsstatements.org/vocab/InC-NC/1.0/"
+                ],
+                "date_created_tesim": [
+                    "2015"
+                ],
+                "identifier_tesim": [
+                    "990005888450302716"
+                ],
+                "thumbnail_path_ss": "/downloads/1v53jx30r?file=thumbnail",
+                "suppressed_bsi": false,
+                "actionable_workflow_roles_ssim": [
+                    "admin_set/default-default-managing",
+                    "admin_set/default-default-approving",
+                    "admin_set/default-default-depositing"
+                ],
+                "workflow_state_name_ssim": [
+                    "deposited"
+                ],
+                "member_ids_ssim": [
+                    "1v53jx30r"
+                ],
+                "member_of_collections_ssim": [
+                    "Tesis",
+                    "Conacyt"
+                ],
+                "member_of_collection_ids_ssim": [
+                    "bc386j61k",
+                    "fx719m640"
+                ],
+                "file_set_ids_ssim": [
+                    "1v53jx30r"
+                ],
+                "visibility_ssi": "open",
+                "admin_set_tesim": [
+                    "Default Admin Set"
+                ],
+                "human_readable_type_tesim": [
+                    "Thesis"
+                ],
+                "read_access_group_ssim": [
+                    "public"
+                ],
+                "edit_access_group_ssim": [
+                    "admin"
+                ],
+                "edit_access_person_ssim": [
+                    "rcuellar@colmex.mx"
+                ],
+                "nesting_collection__ancestors_ssim": [
+                    "bc386j61k",
+                    "fx719m640"
+                ],
+                "nesting_collection__parent_ids_ssim": [
+                    "bc386j61k",
+                    "fx719m640"
+                ],
+                "nesting_collection__pathnames_ssim": [
+                    "bc386j61k/w0892b303",
+                    "fx719m640/w0892b303"
+                ],
+                "nesting_collection__deepest_nested_depth_isi": 2,
+                "_version_": 1642452844822921216,
+                "timestamp": "2019-08-21T05:24:54.016Z",
+                "score": 1.0
+            },
+            {
+                "system_create_dtsi": "2019-05-18T17:47:32Z",
+                "system_modified_dtsi": "2019-06-05T00:26:22Z",
+                "has_model_ssim": [
+                    "Thesis"
+                ],
+                "id": "0v8380990",
+                "accessControl_ssim": [
+                    "c81b4016-4ff9-4ca4-9316-6d3248bbab12"
+                ],
+                "hasRelatedMediaFragment_ssim": [
+                    "pc289j378"
+                ],
+                "hasRelatedImage_ssim": [
+                    "pc289j378"
+                ],
+                "depositor_ssim": [
+                    "rcuellar@colmex.mx"
+                ],
+                "depositor_tesim": [
+                    "rcuellar@colmex.mx"
+                ],
+                "title_tesim": [
+                    "Employment dynamics and monetary policy under informality"
+                ],
+                "date_uploaded_dtsi": "2019-05-18T17:47:32Z",
+                "date_modified_dtsi": "2019-05-18T17:47:32Z",
+                "isPartOf_ssim": [
+                    "admin_set/default"
+                ],
+                "creator_conacyt_tesim": [
+                    "curp: OXFJ840320HSPXLN02\nfechaNacCons: 1984-03-20T00:00:00-06:00\nidCvuConacyt: 41992\nidIdentificadorCa: CA11317\nnombres: JUAN RICARDO\nprimerApellido: DE LA O\nrn: 871383\nsegundoApellido: FLORES\n"
+                ],
+                "subject_conacyt_tesim": [
+                    "5"
+                ],
+                "pub_conacyt_tesim": [
+                    "Students",
+                    "Researchers"
+                ],
+                "type_conacyt_tesim": [
+                    "info:eu-repo/semantics/masterDegreeWork"
+                ],
+                "director_tesim": [
+                    "McKnight, Stephen"
+                ],
+                "extension_tesim": [
+                    "vi, 58 páginas"
+                ],
+                "other_formats_tesim": [
+                    "39050923440O",
+                    "39050923439V (CE)",
+                    "39050936957T (DC)"
+                ],
+                "degree_program_tesim": [
+                    "Maestro en Economía"
+                ],
+                "resource_type_tesim": [
+                    "Trabajo de investigación de Maestría"
+                ],
+                "creator_tesim": [
+                    "O Flores, Juan Ricardo de la"
+                ],
+                "language_tesim": [
+                    "inglés"
+                ],
+                "subject_tesim": [
+                    "Política monetaria",
+                    "Mercado de trabajo",
+                    "Sector informal (Economía)"
+                ],
+                "classification_tesim": [
+                    "331.12/Of112e"
+                ],
+                "type_of_illustrations_tesim": [
+                    "gráficas"
+                ],
+                "center_tesim": [
+                    "Centro de Estudios Económicos"
+                ],
+                "license_tesim": [
+                    "http://creativecommons.org/licenses/by-nc-nd/4.0/"
+                ],
+                "rights_statement_tesim": [
+                    "http://rightsstatements.org/vocab/InC-NC/1.0/"
+                ],
+                "date_created_tesim": [
+                    "2014"
+                ],
+                "identifier_tesim": [
+                    "990006733800302716"
+                ],
+                "thumbnail_path_ss": "/downloads/pc289j378?file=thumbnail",
+                "suppressed_bsi": false,
+                "actionable_workflow_roles_ssim": [
+                    "admin_set/default-default-managing",
+                    "admin_set/default-default-approving",
+                    "admin_set/default-default-depositing"
+                ],
+                "workflow_state_name_ssim": [
+                    "deposited"
+                ],
+                "member_ids_ssim": [
+                    "pc289j378"
+                ],
+                "member_of_collections_ssim": [
+                    "Tesis",
+                    "Conacyt"
+                ],
+                "member_of_collection_ids_ssim": [
+                    "bc386j61k",
+                    "fx719m640"
+                ],
+                "file_set_ids_ssim": [
+                    "pc289j378"
+                ],
+                "visibility_ssi": "open",
+                "admin_set_tesim": [
+                    "Default Admin Set"
+                ],
+                "human_readable_type_tesim": [
+                    "Thesis"
+                ],
+                "read_access_group_ssim": [
+                    "public"
+                ],
+                "edit_access_group_ssim": [
+                    "admin"
+                ],
+                "edit_access_person_ssim": [
+                    "rcuellar@colmex.mx"
+                ],
+                "nesting_collection__ancestors_ssim": [
+                    "bc386j61k",
+                    "fx719m640"
+                ],
+                "nesting_collection__parent_ids_ssim": [
+                    "bc386j61k",
+                    "fx719m640"
+                ],
+                "nesting_collection__pathnames_ssim": [
+                    "bc386j61k/0v8380990",
+                    "fx719m640/0v8380990"
+                ],
+                "nesting_collection__deepest_nested_depth_isi": 2,
+                "_version_": 1642453539055730688,
+                "timestamp": "2019-08-21T05:35:56.088Z",
+                "score": 1.0
+            },
+            {
+                "system_create_dtsi": "2019-05-18T17:47:04Z",
+                "system_modified_dtsi": "2019-06-05T00:34:43Z",
+                "has_model_ssim": [
+                    "Thesis"
+                ],
+                "id": "70795787c",
+                "accessControl_ssim": [
+                    "035e5869-2b2b-4a6c-bb8f-e67d4e9e5d80"
+                ],
+                "hasRelatedMediaFragment_ssim": [
+                    "6682x432g"
+                ],
+                "hasRelatedImage_ssim": [
+                    "6682x432g"
+                ],
+                "depositor_ssim": [
+                    "rcuellar@colmex.mx"
+                ],
+                "depositor_tesim": [
+                    "rcuellar@colmex.mx"
+                ],
+                "title_tesim": [
+                    "Riesgo moral y competencia duopolística en localización"
+                ],
+                "date_uploaded_dtsi": "2019-05-18T17:47:04Z",
+                "date_modified_dtsi": "2019-05-18T17:47:04Z",
+                "isPartOf_ssim": [
+                    "admin_set/default"
+                ],
+                "creator_conacyt_tesim": [
+                    "curp: RUPC891001HDFZRR00\nfechaNacCons: 1989-10-01T00:00:00-06:00\nidCvuConacyt: 480665\nidIdentificadorCa: CA95015\nnombres: CARLOS DANIEL\nprimerApellido: RUIZ\nrn: 992416\nsegundoApellido: PEREZ\n"
+                ],
+                "subject_conacyt_tesim": [
+                    "5"
+                ],
+                "pub_conacyt_tesim": [
+                    "Students",
+                    "Researchers"
+                ],
+                "type_conacyt_tesim": [
+                    "info:eu-repo/semantics/masterDegreeWork"
+                ],
+                "director_tesim": [
+                    "Sempere, Jaime"
+                ],
+                "extension_tesim": [
+                    "28 páginas"
+                ],
+                "other_formats_tesim": [
+                    "39050919622B (CE)",
+                    "39050941511O (DC)",
+                    "39050919621A"
+                ],
+                "degree_program_tesim": [
+                    "Maestro en Economía"
+                ],
+                "resource_type_tesim": [
+                    "Trabajo de investigación de Maestría"
+                ],
+                "creator_tesim": [
+                    "Ruiz Pérez, Carlos Daniel"
+                ],
+                "language_tesim": [
+                    "español"
+                ],
+                "subject_tesim": [
+                    "Consumidores",
+                    "Modelos matemáticos",
+                    "Competencia económica"
+                ],
+                "classification_tesim": [
+                    "338.6048/R9347r"
+                ],
+                "center_tesim": [
+                    "Centro de Estudios Económicos"
+                ],
+                "license_tesim": [
+                    "http://creativecommons.org/licenses/by-nc-nd/4.0/"
+                ],
+                "rights_statement_tesim": [
+                    "http://rightsstatements.org/vocab/InC-NC/1.0/"
+                ],
+                "date_created_tesim": [
+                    "2014"
+                ],
+                "identifier_tesim": [
+                    "990007230230302716"
+                ],
+                "thumbnail_path_ss": "/downloads/6682x432g?file=thumbnail",
+                "suppressed_bsi": false,
+                "actionable_workflow_roles_ssim": [
+                    "admin_set/default-default-managing",
+                    "admin_set/default-default-approving",
+                    "admin_set/default-default-depositing"
+                ],
+                "workflow_state_name_ssim": [
+                    "deposited"
+                ],
+                "member_ids_ssim": [
+                    "6682x432g"
+                ],
+                "member_of_collections_ssim": [
+                    "Tesis",
+                    "Conacyt"
+                ],
+                "member_of_collection_ids_ssim": [
+                    "bc386j61k",
+                    "fx719m640"
+                ],
+                "file_set_ids_ssim": [
+                    "6682x432g"
+                ],
+                "visibility_ssi": "open",
+                "admin_set_tesim": [
+                    "Default Admin Set"
+                ],
+                "human_readable_type_tesim": [
+                    "Thesis"
+                ],
+                "read_access_group_ssim": [
+                    "public"
+                ],
+                "edit_access_group_ssim": [
+                    "admin"
+                ],
+                "edit_access_person_ssim": [
+                    "rcuellar@colmex.mx"
+                ],
+                "nesting_collection__ancestors_ssim": [
+                    "bc386j61k",
+                    "fx719m640"
+                ],
+                "nesting_collection__parent_ids_ssim": [
+                    "bc386j61k",
+                    "fx719m640"
+                ],
+                "nesting_collection__pathnames_ssim": [
+                    "bc386j61k/70795787c",
+                    "fx719m640/70795787c"
+                ],
+                "nesting_collection__deepest_nested_depth_isi": 2,
+                "_version_": 1642453544471625728,
+                "timestamp": "2019-08-21T05:36:01.252Z",
+                "score": 1.0
+            },
+            {
+                "system_create_dtsi": "2019-05-18T17:46:47Z",
+                "system_modified_dtsi": "2019-06-05T00:26:56Z",
+                "has_model_ssim": [
+                    "Thesis"
+                ],
+                "id": "4x51hj35n",
+                "accessControl_ssim": [
+                    "33421d58-c652-44f2-b5da-aea1940533e5"
+                ],
+                "hasRelatedMediaFragment_ssim": [
+                    "q811kk02h"
+                ],
+                "hasRelatedImage_ssim": [
+                    "q811kk02h"
+                ],
+                "depositor_ssim": [
+                    "rcuellar@colmex.mx"
+                ],
+                "depositor_tesim": [
+                    "rcuellar@colmex.mx"
+                ],
+                "title_tesim": [
+                    "Un modelo de utilidad intemporal sobre un agente con información limitada"
+                ],
+                "date_uploaded_dtsi": "2019-05-18T17:46:47Z",
+                "date_modified_dtsi": "2019-05-18T17:46:47Z",
+                "isPartOf_ssim": [
+                    "admin_set/default"
+                ],
+                "creator_conacyt_tesim": [
+                    "curp: VEMA880528HMCRRR11\nfechaNacCons: 1988-05-28T00:00:00-06:00\nidCvuConacyt: 478028\nidIdentificadorCa: CA94082\nnombres: ARTURO\nprimerApellido: VERA\nrn: 986820\nsegundoApellido: MORENO\n"
+                ],
+                "subject_conacyt_tesim": [
+                    "5"
+                ],
+                "pub_conacyt_tesim": [
+                    "Students",
+                    "Researchers"
+                ],
+                "type_conacyt_tesim": [
+                    "info:eu-repo/semantics/masterDegreeWork"
+                ],
+                "director_tesim": [
+                    "Cantala, David"
+                ],
+                "extension_tesim": [
+                    "27 páginas"
+                ],
+                "other_formats_tesim": [
+                    "39050923025D (CE)",
+                    "39050923024C",
+                    "39050937000P (DC)"
+                ],
+                "degree_program_tesim": [
+                    "Maestro en Economía"
+                ],
+                "resource_type_tesim": [
+                    "Trabajo de investigación de Maestría"
+                ],
+                "creator_tesim": [
+                    "Vera Moreno, Arturo"
+                ],
+                "language_tesim": [
+                    "español"
+                ],
+                "subject_tesim": [
+                    "Teoría de la utilidad",
+                    "Administración de riesgos",
+                    "Modelos matemáticos"
+                ],
+                "classification_tesim": [
+                    "330.15701/V473m"
+                ],
+                "type_of_illustrations_tesim": [
+                    "ilustraciones"
+                ],
+                "center_tesim": [
+                    "Centro de Estudios Económicos"
+                ],
+                "license_tesim": [
+                    "http://creativecommons.org/licenses/by-nc-nd/4.0/"
+                ],
+                "rights_statement_tesim": [
+                    "http://rightsstatements.org/vocab/InC-NC/1.0/"
+                ],
+                "date_created_tesim": [
+                    "2014"
+                ],
+                "identifier_tesim": [
+                    "990006674240302716"
+                ],
+                "thumbnail_path_ss": "/downloads/q811kk02h?file=thumbnail",
+                "suppressed_bsi": false,
+                "actionable_workflow_roles_ssim": [
+                    "admin_set/default-default-managing",
+                    "admin_set/default-default-approving",
+                    "admin_set/default-default-depositing"
+                ],
+                "workflow_state_name_ssim": [
+                    "deposited"
+                ],
+                "member_ids_ssim": [
+                    "q811kk02h"
+                ],
+                "member_of_collections_ssim": [
+                    "Tesis",
+                    "Conacyt"
+                ],
+                "member_of_collection_ids_ssim": [
+                    "bc386j61k",
+                    "fx719m640"
+                ],
+                "file_set_ids_ssim": [
+                    "q811kk02h"
+                ],
+                "visibility_ssi": "open",
+                "admin_set_tesim": [
+                    "Default Admin Set"
+                ],
+                "human_readable_type_tesim": [
+                    "Thesis"
+                ],
+                "read_access_group_ssim": [
+                    "public"
+                ],
+                "edit_access_group_ssim": [
+                    "admin"
+                ],
+                "edit_access_person_ssim": [
+                    "rcuellar@colmex.mx"
+                ],
+                "nesting_collection__ancestors_ssim": [
+                    "bc386j61k",
+                    "fx719m640"
+                ],
+                "nesting_collection__parent_ids_ssim": [
+                    "bc386j61k",
+                    "fx719m640"
+                ],
+                "nesting_collection__pathnames_ssim": [
+                    "bc386j61k/4x51hj35n",
+                    "fx719m640/4x51hj35n"
+                ],
+                "nesting_collection__deepest_nested_depth_isi": 2,
+                "_version_": 1642453537325580288,
+                "timestamp": "2019-08-21T05:35:54.437Z",
+                "score": 1.0
+            }
+        ],
+        "facets": [
+            {
+                "name": "resource_type_sim",
+                "items": [
+                    {
+                        "value": "Tesis de Maestría",
+                        "hits": 1047,
+                        "label": "Tesis de Maestría"
+                    },
+                    {
+                        "value": "Tesis de Doctorado",
+                        "hits": 781,
+                        "label": "Tesis de Doctorado"
+                    },
+                    {
+                        "value": "Tesis de Licenciatura",
+                        "hits": 439,
+                        "label": "Tesis de Licenciatura"
+                    },
+                    {
+                        "value": "Trabajo de investigación de Maestría",
+                        "hits": 355,
+                        "label": "Trabajo de investigación de Maestría"
+                    }
+                ],
+                "label": "Resource Type"
+            },
+            {
+                "name": "creator_sim",
+                "items": [
+                    {
+                        "value": "Ceballos Mina, Owen Eli",
+                        "hits": 3,
+                        "label": "Ceballos Mina, Owen Eli"
+                    },
+                    {
+                        "value": "Acosta Peña, Brasil Alberto",
+                        "hits": 2,
+                        "label": "Acosta Peña, Brasil Alberto"
+                    },
+                    {
+                        "value": "Andrade Rosas, Luis Antonio",
+                        "hits": 2,
+                        "label": "Andrade Rosas, Luis Antonio"
+                    },
+                    {
+                        "value": "Arce Padrón, Yissel",
+                        "hits": 2,
+                        "label": "Arce Padrón, Yissel"
+                    },
+                    {
+                        "value": "Añorve Zapata, Indira",
+                        "hits": 2,
+                        "label": "Añorve Zapata, Indira"
+                    },
+                    {
+                        "value": "Banegas González, Israel Manuel",
+                        "hits": 2,
+                        "label": "Banegas González, Israel Manuel"
+                    }
+                ],
+                "label": "Creator Sim"
+            },
+            {
+                "name": "contributor_sim",
+                "items": [],
+                "label": "Contributor"
+            },
+            {
+                "name": "center_sim",
+                "items": [
+                    {
+                        "value": "Centro de Estudios Internacionales",
+                        "hits": 518,
+                        "label": "Centro de Estudios Internacionales"
+                    },
+                    {
+                        "value": "Centro de Estudios Demográficos, Urbanos y Ambientales",
+                        "hits": 473,
+                        "label": "Centro de Estudios Demográficos, Urbanos y Ambientales"
+                    },
+                    {
+                        "value": "Centro de Estudios Económicos",
+                        "hits": 455,
+                        "label": "Centro de Estudios Económicos"
+                    },
+                    {
+                        "value": "Centro de Estudios de Asia y África",
+                        "hits": 317,
+                        "label": "Centro de Estudios de Asia y África"
+                    },
+                    {
+                        "value": "Centro de Estudios Sociológicos",
+                        "hits": 282,
+                        "label": "Centro de Estudios Sociológicos"
+                    },
+                    {
+                        "value": "Centro de Estudios Históricos",
+                        "hits": 249,
+                        "label": "Centro de Estudios Históricos"
+                    }
+                ],
+                "label": "Center Sim"
+            },
+            {
+                "name": "date_created_sim",
+                "items": [
+                    {
+                        "value": "2013",
+                        "hits": 157,
+                        "label": "2013"
+                    },
+                    {
+                        "value": "2012",
+                        "hits": 144,
+                        "label": "2012"
+                    },
+                    {
+                        "value": "2011",
+                        "hits": 136,
+                        "label": "2011"
+                    },
+                    {
+                        "value": "2009",
+                        "hits": 133,
+                        "label": "2009"
+                    },
+                    {
+                        "value": "2016",
+                        "hits": 124,
+                        "label": "2016"
+                    },
+                    {
+                        "value": "2017",
+                        "hits": 122,
+                        "label": "2017"
+                    },
+                    {
+                        "value": "2007",
+                        "hits": 120,
+                        "label": "2007"
+                    },
+                    {
+                        "value": "2015",
+                        "hits": 120,
+                        "label": "2015"
+                    },
+                    {
+                        "value": "2014",
+                        "hits": 115,
+                        "label": "2014"
+                    },
+                    {
+                        "value": "2008",
+                        "hits": 92,
+                        "label": "2008"
+                    },
+                    {
+                        "value": "2006",
+                        "hits": 89,
+                        "label": "2006"
+                    },
+                    {
+                        "value": "2010",
+                        "hits": 85,
+                        "label": "2010"
+                    },
+                    {
+                        "value": "2004",
+                        "hits": 80,
+                        "label": "2004"
+                    },
+                    {
+                        "value": "2002",
+                        "hits": 78,
+                        "label": "2002"
+                    },
+                    {
+                        "value": "2018",
+                        "hits": 77,
+                        "label": "2018"
+                    },
+                    {
+                        "value": "2003",
+                        "hits": 71,
+                        "label": "2003"
+                    },
+                    {
+                        "value": "2005",
+                        "hits": 66,
+                        "label": "2005"
+                    },
+                    {
+                        "value": "1995",
+                        "hits": 62,
+                        "label": "1995"
+                    },
+                    {
+                        "value": "2001",
+                        "hits": 61,
+                        "label": "2001"
+                    },
+                    {
+                        "value": "1997",
+                        "hits": 60,
+                        "label": "1997"
+                    },
+                    {
+                        "value": "1998",
+                        "hits": 58,
+                        "label": "1998"
+                    },
+                    {
+                        "value": "1999",
+                        "hits": 56,
+                        "label": "1999"
+                    },
+                    {
+                        "value": "2000",
+                        "hits": 54,
+                        "label": "2000"
+                    },
+                    {
+                        "value": "1986",
+                        "hits": 51,
+                        "label": "1986"
+                    },
+                    {
+                        "value": "1996",
+                        "hits": 50,
+                        "label": "1996"
+                    },
+                    {
+                        "value": "1989",
+                        "hits": 47,
+                        "label": "1989"
+                    },
+                    {
+                        "value": "1987",
+                        "hits": 40,
+                        "label": "1987"
+                    },
+                    {
+                        "value": "1990",
+                        "hits": 38,
+                        "label": "1990"
+                    },
+                    {
+                        "value": "1991",
+                        "hits": 38,
+                        "label": "1991"
+                    },
+                    {
+                        "value": "1993",
+                        "hits": 38,
+                        "label": "1993"
+                    },
+                    {
+                        "value": "1992",
+                        "hits": 32,
+                        "label": "1992"
+                    },
+                    {
+                        "value": "1985",
+                        "hits": 30,
+                        "label": "1985"
+                    },
+                    {
+                        "value": "1988",
+                        "hits": 30,
+                        "label": "1988"
+                    },
+                    {
+                        "value": "1994",
+                        "hits": 30,
+                        "label": "1994"
+                    },
+                    {
+                        "value": "1984",
+                        "hits": 18,
+                        "label": "1984"
+                    },
+                    {
+                        "value": "1983",
+                        "hits": 4,
+                        "label": "1983"
+                    },
+                    {
+                        "value": "1968",
+                        "hits": 2,
+                        "label": "1968"
+                    },
+                    {
+                        "value": "1974",
+                        "hits": 2,
+                        "label": "1974"
+                    },
+                    {
+                        "value": "1975",
+                        "hits": 2,
+                        "label": "1975"
+                    },
+                    {
+                        "value": "1946",
+                        "hits": 1,
+                        "label": "1946"
+                    },
+                    {
+                        "value": "1969",
+                        "hits": 1,
+                        "label": "1969"
+                    },
+                    {
+                        "value": "1970",
+                        "hits": 1,
+                        "label": "1970"
+                    },
+                    {
+                        "value": "1971",
+                        "hits": 1,
+                        "label": "1971"
+                    },
+                    {
+                        "value": "1972",
+                        "hits": 1,
+                        "label": "1972"
+                    },
+                    {
+                        "value": "1973",
+                        "hits": 1,
+                        "label": "1973"
+                    },
+                    {
+                        "value": "1976",
+                        "hits": 1,
+                        "label": "1976"
+                    },
+                    {
+                        "value": "1977",
+                        "hits": 1,
+                        "label": "1977"
+                    },
+                    {
+                        "value": "1979",
+                        "hits": 1,
+                        "label": "1979"
+                    },
+                    {
+                        "value": "1981",
+                        "hits": 1,
+                        "label": "1981"
+                    }
+                ],
+                "label": "year"
+            },
+            {
+                "name": "subject_work_sim",
+                "items": [
+                    {
+                        "value": "Tratado de Libre Comercio de América del Norte",
+                        "hits": 14,
+                        "label": "Tratado de Libre Comercio de América del Norte"
+                    },
+                    {
+                        "value": "Programa Oportunidades (México)",
+                        "hits": 9,
+                        "label": "Programa Oportunidades (México)"
+                    },
+                    {
+                        "value": "Encuesta Nacional de Salud Reproductiva (2003, México)",
+                        "hits": 3,
+                        "label": "Encuesta Nacional de Salud Reproductiva (2003, México)"
+                    },
+                    {
+                        "value": "Programa de Apoyos Directos al Campo (México)",
+                        "hits": 3,
+                        "label": "Programa de Apoyos Directos al Campo (México)"
+                    },
+                    {
+                        "value": "Programa de Educación, Salud y Alimentación (México)",
+                        "hits": 3,
+                        "label": "Programa de Educación, Salud y Alimentación (México)"
+                    },
+                    {
+                        "value": "Seguro Popular de Salud (México)",
+                        "hits": 3,
+                        "label": "Seguro Popular de Salud (México)"
+                    }
+                ],
+                "label": "Subject Work Sim"
+            },
+            {
+                "name": "subject_person_sim",
+                "items": [
+                    {
+                        "value": "México. Constitución. Artículo 27",
+                        "hits": 3,
+                        "label": "México. Constitución. Artículo 27"
+                    },
+                    {
+                        "value": "Borges, Jorge Luis, 1899-1986",
+                        "hits": 2,
+                        "label": "Borges, Jorge Luis, 1899-1986"
+                    },
+                    {
+                        "value": "Gaos, José, 1900-1969",
+                        "hits": 2,
+                        "label": "Gaos, José, 1900-1969"
+                    },
+                    {
+                        "value": "Pacheco, José Emilio, 1939-2014",
+                        "hits": 2,
+                        "label": "Pacheco, José Emilio, 1939-2014"
+                    },
+                    {
+                        "value": "Sierra, Justo 1848-1912",
+                        "hits": 2,
+                        "label": "Sierra, Justo 1848-1912"
+                    },
+                    {
+                        "value": "Abhinavagupta Rājānaka",
+                        "hits": 1,
+                        "label": "Abhinavagupta Rājānaka"
+                    }
+                ],
+                "label": "Subject Person Sim"
+            },
+            {
+                "name": "subject_corporate_sim",
+                "items": [
+                    {
+                        "value": "Partido Acción Nacional (México)",
+                        "hits": 8,
+                        "label": "Partido Acción Nacional (México)"
+                    },
+                    {
+                        "value": "Iglesia Católica",
+                        "hits": 6,
+                        "label": "Iglesia Católica"
+                    },
+                    {
+                        "value": "Partido Revolucionario Institucional (México)",
+                        "hits": 6,
+                        "label": "Partido Revolucionario Institucional (México)"
+                    },
+                    {
+                        "value": "Partido de la Revolución Democrática (México)",
+                        "hits": 6,
+                        "label": "Partido de la Revolución Democrática (México)"
+                    },
+                    {
+                        "value": "El Colegio de México. Biblioteca Daniel Cosío Villegas",
+                        "hits": 5,
+                        "label": "El Colegio de México. Biblioteca Daniel Cosío Villegas"
+                    },
+                    {
+                        "value": "México. Congreso",
+                        "hits": 5,
+                        "label": "México. Congreso"
+                    }
+                ],
+                "label": "Subject Corporate Sim"
+            },
+            {
+                "name": "subject_sim",
+                "items": [
+                    {
+                        "value": "Historia",
+                        "hits": 199,
+                        "label": "Historia"
+                    },
+                    {
+                        "value": "Política y gobierno",
+                        "hits": 190,
+                        "label": "Política y gobierno"
+                    },
+                    {
+                        "value": "Crítica e interpretación",
+                        "hits": 141,
+                        "label": "Crítica e interpretación"
+                    },
+                    {
+                        "value": "Aspectos sociales",
+                        "hits": 122,
+                        "label": "Aspectos sociales"
+                    },
+                    {
+                        "value": "Relaciones exteriores",
+                        "hits": 115,
+                        "label": "Relaciones exteriores"
+                    },
+                    {
+                        "value": "Modelos econométricos",
+                        "hits": 105,
+                        "label": "Modelos econométricos"
+                    }
+                ],
+                "label": "Subject Sim"
+            },
+            {
+                "name": "based_near_label_sim",
+                "items": [],
+                "label": "Based Near Label Sim"
+            },
+            {
+                "name": "geographic_coverage_sim",
+                "items": [
+                    {
+                        "value": "México",
+                        "hits": 1119,
+                        "label": "México"
+                    },
+                    {
+                        "value": "Ciudad de México",
+                        "hits": 122,
+                        "label": "Ciudad de México"
+                    },
+                    {
+                        "value": "Estados Unidos",
+                        "hits": 118,
+                        "label": "Estados Unidos"
+                    },
+                    {
+                        "value": "China",
+                        "hits": 55,
+                        "label": "China"
+                    },
+                    {
+                        "value": "Japón",
+                        "hits": 49,
+                        "label": "Japón"
+                    },
+                    {
+                        "value": "India",
+                        "hits": 36,
+                        "label": "India"
+                    }
+                ],
+                "label": "Geographic Coverage Sim"
+            },
+            {
+                "name": "temporary_coverage_sim",
+                "items": [
+                    {
+                        "value": "Siglo XX",
+                        "hits": 287,
+                        "label": "Siglo XX"
+                    },
+                    {
+                        "value": "Siglo XXI",
+                        "hits": 160,
+                        "label": "Siglo XXI"
+                    },
+                    {
+                        "value": "Siglo XIX",
+                        "hits": 103,
+                        "label": "Siglo XIX"
+                    },
+                    {
+                        "value": "Siglo XVIII",
+                        "hits": 22,
+                        "label": "Siglo XVIII"
+                    },
+                    {
+                        "value": "Siglo XX-XXI",
+                        "hits": 20,
+                        "label": "Siglo XX-XXI"
+                    },
+                    {
+                        "value": "Colonia española, 1540-1810",
+                        "hits": 15,
+                        "label": "Colonia española, 1540-1810"
+                    }
+                ],
+                "label": "Temporary Coverage Sim"
+            },
+            {
+                "name": "file_format_sim",
+                "items": [],
+                "label": "File Format Sim"
+            },
+            {
+                "name": "director_sim",
+                "items": [
+                    {
+                        "value": "Esquivel, Gerardo",
+                        "hits": 53,
+                        "label": "Esquivel, Gerardo"
+                    },
+                    {
+                        "value": "Yúnez-Naude, Antonio",
+                        "hits": 38,
+                        "label": "Yúnez-Naude, Antonio"
+                    },
+                    {
+                        "value": "García, Brígida",
+                        "hits": 35,
+                        "label": "García, Brígida"
+                    },
+                    {
+                        "value": "Garza Villarreal, Gustavo",
+                        "hits": 32,
+                        "label": "Garza Villarreal, Gustavo"
+                    },
+                    {
+                        "value": "Loaeza, Soledad",
+                        "hits": 31,
+                        "label": "Loaeza, Soledad"
+                    },
+                    {
+                        "value": "Covarrubias Velasco, Ana",
+                        "hits": 30,
+                        "label": "Covarrubias Velasco, Ana"
+                    }
+                ],
+                "label": "Director Sim"
+            },
+            {
+                "name": "degree_program_sim",
+                "items": [
+                    {
+                        "value": "Maestro en Economía",
+                        "hits": 420,
+                        "label": "Maestro en Economía"
+                    },
+                    {
+                        "value": "Licenciado en Relaciones Internacionales",
+                        "hits": 315,
+                        "label": "Licenciado en Relaciones Internacionales"
+                    },
+                    {
+                        "value": "Maestro en Estudios de Asia y África",
+                        "hits": 263,
+                        "label": "Maestro en Estudios de Asia y África"
+                    },
+                    {
+                        "value": "Doctor en Historia",
+                        "hits": 243,
+                        "label": "Doctor en Historia"
+                    },
+                    {
+                        "value": "Maestro en Demografía",
+                        "hits": 219,
+                        "label": "Maestro en Demografía"
+                    },
+                    {
+                        "value": "Maestro en Estudios Urbanos",
+                        "hits": 157,
+                        "label": "Maestro en Estudios Urbanos"
+                    }
+                ],
+                "label": "Degree Program Sim"
+            },
+            {
+                "name": "generic_type_sim",
+                "items": [
+                    {
+                        "value": "Work",
+                        "hits": 2622,
+                        "label": "Work"
+                    },
+                    {
+                        "value": "Collection",
+                        "hits": 1,
+                        "label": "Collection"
+                    }
+                ],
+                "label": "Generic Type Sim"
+            }
+        ],
+        "pages": {
+            "current_page": 1,
+            "next_page": 2,
+            "prev_page": null,
+            "total_pages": 132,
+            "limit_value": 20,
+            "offset_value": 0,
+            "total_count": 2623,
+            "first_page?": true,
+            "last_page?": false
+        }
+    }
+}

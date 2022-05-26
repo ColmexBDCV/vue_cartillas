@@ -1,0 +1,62 @@
+<template id="personas">
+    <div class="bg-pages about-page">
+        <div style="background-color: rgb(245 245 245); width: 100%; border-bottom: 5px solid #5E002B;">
+            <div class="container">
+                <headers :keyword="search" :search_in="search_in" is_page="true"></headers>
+            </div>
+        </div>
+        <div class="container" style="height: 100%;">
+            <div class="">
+                <div class="row">
+                    <div class="col">
+                        <div class="title">
+                            Contactar
+                        </div>
+                    </div>
+                    <div>
+                        <div 
+                            style="background-image: url('src/assets/contacto_2.jpg'); height: 400px; background-position: 25% 85%; background-size: cover;">
+
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-4">
+                    <p style="font-size: 35px; font-weight: 600;">
+                        <strong>El Colegio de México A.C.</strong> 
+                    </p>
+                    <div class="contacto">
+                        <p>
+                            Carretera Picacho Ajusco 20, Col. Ampliación Fuentes del Pedregal, Ciudad de México, C.P. 14110
+                        </p>
+                        <p>
+                            biblio2@colmex.mx
+                        </p>
+                        <p>
+                            Tel. 5449 3000 Ext. 2121,2222
+                        </p>
+                    </div>                            
+                </div>
+                <div class="col-8">
+                    <form action="mailto:ecisneros@colmex.mx" method="post">
+                        <div class="mb-3">
+                            <input type="email" class="form-control" id="email" placeholder="mail@example.com">
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="asunto" placeholder="Asunto">
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" id="mensaje" rows="8" placeholder="Mensaje"></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <div class="d-grid gap-2">
+                                <button type="submit" class="btn btn-primary mb-3">Enviar</button>
+                            </div>                                    
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

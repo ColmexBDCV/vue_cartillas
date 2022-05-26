@@ -1,0 +1,248 @@
+<template id="home">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-3 ">
+                <facets :facets="repo.facets" :params="this.params">
+                </facets>
+            </div>
+            <div class="col-sm-9 ">
+                <search></search>
+                <helperbar :pages="repo.pages" ref="pagination" :total="repo.total_pages"></helperbar>
+                <docs :docs="repo.docs"></docs>
+                <pages :pages="repo.pages" ref="pagination" :total="repo.total_pages"></pages>
+            </div>
+        </div>
+    </div>
+</template>
+<template id="docs">
+    <div class="docs_view">
+        <div class="row" v-for="doc in docs">
+            <router-link :to="{path: 'docs', query: {id: doc.id, has_model: doc.has_model, thumbnail: doc.thumbnail_path_ss, related: doc.hasRelatedMediaFragment}}">
+                <h2> {{ doc.title[0] }}</h2>
+            </router-link>
+            <div class="col-sm-3">
+                <img class="img-responsive" :src="get_url() + doc.thumbnail_path_ss ">
+            </div>
+            <div class="col-sm-9">
+                <table class="table">
+                    <tbody>
+                        <tr v-for="(metadata, key, index) in doc" v-if="check_metadata(metadata, key)">
+                            <th>
+                                {{ $t(key) }}
+                            </th>
+                            <td v-if="isObject(metadata)">
+                                <p v-for="m in metadata">
+                                    {{ m }}
+                                </p>
+                            </td>
+                            <td v-else>
+                                <p>
+                                    {{ metadata }}
+                                </p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</template>
+<template id="pages">
+    <div>
+            <nav aria-label="Paginas disponibles" style="text-align: center;">
+                <ul class="pagination">
+                    <li class="page-item" v-if="pages.current_page != 1">
+                        <a class="page-link" @click="next_page(pages.prev_page)" href="#">{{$t('previous')}}</a>
+                    </li>
+                    <li class="page-item disabled" v-if="pages.current_page == 1">
+                        <span class="page-link">{{$t('previous')}}</span>
+                    </li>
+                    <li class="page-item" :class="isCurrent((1))" v-if="pages.current_page > 4"><a class="page-link"
+                            @click="next_page(1)" href="#">1</a></li>
+                    <li class="page-item disabled" v-if="pages.current_page > 4">
+                        <span class="page-link">...</span>
+                    </li>
+                    <li class="page-item" :class="isCurrent((page))" v-for="(page,index) in get_pages">
+                        <a class="page-link" @click="next_page(page)" href="#">{{ page }}</a>
+                    </li>
+                    <li class="page-item disabled" v-if="pages.total_pages - pagesArray[pagesArray.length-1] > 9">
+                        <span class="page-link">...</span>
+                    </li>
+                    <li class="page-item" :class="pages.current_page == pages.total_pages ? 'active' : ''"><a class="page-link"
+                            @click="next_page(pages.total_pages)" href="#">{{pages.total_pages}}</a></li>
+                    <li class="page-item" v-if="pages.current_page < pages.total_pages">
+                        <a class="page-link" @click="next_page(pages.next_page)" href="#">{{$t('next')}}</a>
+                    </li>
+                    <li class="page-item disabled" v-if="pages.current_page == pages.total_pages">
+                        <span class="page-link">{{$t('next')}}</span>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+</template>
+<template id="helperbar">
+    <div>
+            <div style="margin-top: 10px;" v-if="filters.length > 0">
+                    <label>{{$t('filters')}}: </label>
+                    <span class="btn-group appliedFilter constraint filter filter-resource_type_sim" v-for="filter in filters">
+                        <span class="constraint-value btn btn-sm btn-default btn-disabled">
+                            <span class="filterName">{{filter.key}} > </span>
+                            <span class="filterValue" :title="filter.value">{{filter.value}}</span>
+                        </span>                  
+                      <a class="btn btn-default btn-sm remove dropdown-toggle" href="#" @click="delete_query(filter.type, filter.value, filter.key)" :title="$t('remove') + ':' + filter.value"><span class="glyphicon glyphicon-remove"></span><span class="sr-only">Remove </span></a>
+                  </span>
+                  <a class="remove-all" href="#" @click="delete_all()" >Remove All</a>
+            </div>
+            <div>
+                <nav aria-label="Paginas disponibles" style="text-align: left; width: 30%; display: inline">
+                    <ul class="pagination">
+                        <li class="page-item" v-if="pages.current_page != 1">
+                            <a class="page-link" @click="next_page(pages.prev_page)" href="#">{{$t('previous')}}</a>
+                        </li>
+                        <li class="page-item disabled" v-if="pages.current_page == 1">
+                            <span class="page-link">{{$t('previous')}}</span>
+                        </li>
+                        <li class="page-item">
+                            <span class="page-link">{{pages.offset_value + 1}} -
+                                {{(pages.offset_value + paginas) < pages.total_count ? (pages.offset_value + paginas) : pages.total_count }}
+                                de
+                                {{pages.total_count}}
+                            </span>
+                        </li>
+                        <li class="page-item" v-if="pages.current_page < pages.total_pages">
+                            <a class="page-link" @click="next_page(pages.next_page)" href="#">{{$t('next')}}</a>
+                        </li>
+                        <li class="page-item disabled" v-if="pages.current_page == pages.total_pages">
+                            <span class="page-link">{{$t('next')}}</span>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="btn-group" style="float: right; display: inline; width: 30%; margin: 20px 0;">
+                    <button style="float: right;" class="btn dropdown-toggle btn-per_pagina" type="button"
+                        id="dropdownMenuButton" data-toggle="dropdown">
+                        {{paginas}} {{$t('per_page')}} <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#" @click="per_pages(10)">10</a></li>
+                        <li><a href="#" @click="per_pages(20)">20</a></li>
+                        <li><a href="#" @click="per_pages(50)">50</a></li>
+                        <li><a href="#" @click="per_pages(100)">100</a></li>
+                    </ul>
+                </div>
+                <div class="btn-group" style="float: right; display: inline; width: 30%; margin: 20px 0;">
+                    <button style="float: right;" class="btn dropdown-toggle btn-per_pagina" type="button"
+                        id="dropdownMenuButton" data-toggle="dropdown">
+                        {{$t('order_by')}} {{ order }} <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#" @click="order_by('score desc, system_create_dtsi desc', 'Relevancia')">Relevancia</a>
+                        </li>
+                        <li><a href="#" @click="order_by('date_created_sim desc', 'Año Desc')">Año Desc</a></li>
+                        <li><a href="#" @click="order_by('date_created_sim asc', 'Año Asc')">Año Asc</a></li>
+                        <li><a href="#" @click="order_by('title_sim asc', 'Titulo [A-Z]')">Titulo [A-Z]</a></li>
+                        <li><a href="#" @click="order_by('title_sim desc','Titulo [Z-A]')">Titulo [Z-A]</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+</template>
+<template id="search">
+    <div class="input-group">
+            <input type="text" class="form-control" :placeholder="$t('search_term')" v-model="search" />
+            <span class="input-group-btn">
+                <button type="button" class="btn btn-search" @click="search_term">
+                    <span class="glyphicon glyphicon-search"></span> {{$t('go')}}
+                </button>
+            </span>
+        </div>
+</template>
+<script type="text/template" id="facetas">
+    <div>
+            <div v-if="facet.items.length > 0" v-for="(facet, index) in facets" class="panel-group" id="accordion">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" :href="'#facets-'+index">
+                                <span class="glyphicon glyphicon-tag"></span>{{$t(facet.label.toLowerCase())}}</a>
+                        </h4>
+                    </div>
+                    <div :id="'facets-'+index" class="panel-collapse collapse">
+                        <ul class="list-group">
+                            <li v-for="item in facet.items.slice(0, 5)" class="list-group-item">
+                                <span v-if="compare_params(facet.name, item.value)" class="facet-label">
+                                    <span class="selected">{{item.label}}</span>
+                                    <a class="remove" @click="delete_query(facet.name, item.value, $t(facet.label.toLowerCase()))">
+                                        <span class="glyphicon glyphicon-remove"></span>
+                                        <span class="sr-only">[remove]</span>
+                                    </a>
+                                </span>
+                                <span v-else class="facet-label">
+                                    <a @click="query(facet.name,item.value, $t(facet.label.toLowerCase()))">{{item.label}}</a>
+                                </span>
+                            </li>
+                            <li class="list-group-item facet-label" v-if="facet.items.length > 5  ">
+                                <a class="more_facets_link" @click="get_data_facet(facet.name)">{{$t('more')}} <span
+                                        class="sr-only">Creadors</span> »</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <facetModal v-if="showModal" @query="query" :facet_url="facet_url" :facet_data="facet_data"
+                :facet_label="facet_label"></facetModal>
+        </div>
+</script>
+<script type="text/template" id="modal-template">
+    <transition name="modal">
+            <div class="modal-mask">
+                <div class="modal-wrapper">
+                    <div class="modal-container">
+                        <div class="modal-header">
+                            <slot name="header">
+                                {{$t(label_title)}}
+                            </slot>
+                        </div>
+        
+                        <div class="modal-body">
+                            <slot name="body">
+                                <ul class="list-group">
+                                    <li v-for="item in data_local" class="list-item-modal">
+                                        <span class="facet-label">
+                                            <a @click="query(item.value)">{{item.value}}</a>
+                                        </span>
+                                        <span>
+                                            {{item.hits}}
+                                        </span>
+                                    </li>
+                                </ul>
+                            </slot>
+                        </div>
+        
+                        <div class="modal-footer">
+                            <slot name="footer">
+                                <nav aria-label="Paginas disponibles" style="text-align: left;">
+                                    <ul class="pagination pagination-modal">
+                                        <li class="page-item" v-if="isPrev">
+                                            <a class="page-link" @click="prev_page()" href="#">{{$t('previous')}}</a>
+                                        </li>
+                                        <li class="page-item disabled" v-else>
+                                            <span class="page-link">{{$t('previous')}}</span>
+                                        </li>
+                                        <li class="page-item" v-if="isNext">
+                                            <a class="page-link" @click="next_page()" href="#">{{$t('next')}}</a>
+                                        </li>
+                                        <li class="page-item disabled" v-else>
+                                            <span class="page-link">{{$t('next')}}</span>
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <button type="button" class="btn btn-close" @click="modal_facets_close()"
+                                    data-dismiss="modal">{{$t('close')}}</button>
+                            </slot>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </transition>
+</script>

@@ -1,0 +1,1 @@
+Header set Access-Control-Allow-Origin 'http://api.geonames.org/getJSON'

@@ -1,0 +1,58 @@
+<template id="collection">
+    <div class="bg-pages about-page">
+        <div class="container" style="height: 100%;">
+            <div class="pt-3">
+                <div class="row header">
+                    <div class="col">
+                        <table>
+                            <tr>
+                                <td>
+                                    <span class="logo"><img src="src/assets/colmexfavicon.png"></span>
+                                    <span class="movimientos">Movimientos Armados en México</span> 
+                                </td>
+                                <td style="width: 50%;">
+                                    <input type="text" @keyup.enter="send_data" class="form-control search-simple" :placeholder="$t('search_term')"
+                                v-model="search" name="keyword"/>
+                                </td>
+                            </tr>
+                        </table>                        
+                    </div>
+                </div>
+            </div>
+            <div class="contained">
+                <div class="row">
+                    <div class="col">
+                        <div class="title text-start">
+                            Colecciones
+                        </div>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col">
+                            <div v-if="facet.items.length > 0" v-for="(facet, index) in repo.facets" class="" id="accordionFacet">
+                                <div v-if="facet.name === 'member_of_collections_ssim'">
+                                    <div :id="'facets-'+index" class="" :aria-labelledby="'heading' + index" >
+                                        <div class="accordion-body">
+                                            <div class="list-group">
+                                                <div v-for="item in facet.items.slice(0, 5)" class="">
+                                                    <!--<h2>{{item.label}}</h2>
+                                                    <div v-for="(doc,index) in get_collections('member_of_collections_ssim',item.label)">
+                                                        {{index}} ppp
+                                                    </div>-->                                                    
+                                                </div>
+                                                <collection_list :collections="collections" ></collection_list>
+                                                <!--<li class="list-group-item facet-label bg-facetas" v-if="facet.items.length > 5  ">
+                                                    <a class="more_facets_link" @click="get_data_facet(facet.name)">{{$t('more')}} <span
+                                                            class="sr-only"></span> »</a>
+                                                </li>-->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>         
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
