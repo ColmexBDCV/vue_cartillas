@@ -33,7 +33,7 @@ Con la finalidad de crear un visualizador de la coleccion de Cartillas Indigenas
 
 ### Modificar archivo .env.js
 
-Para poder personalizar nuestras imagenes de docker debemos modificar el archivo .env.js que se encuentra en config/.env.js:
+Para poder personalizar las URL de la nueva coleccion a cosechar desde nuestro Repositorio debemos modificar el archivo .env.js que se encuentra en config/.env.js:
 
 En este archivo podemos modeificar la URL de la que extraeremos la informacion del repositorio por medio de axios y blackligth.
 Los campos que se mostraran en la vista detallada del registro.
