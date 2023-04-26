@@ -1,6 +1,11 @@
+import mapsVue from "./maps.vue";
+
 export default{
     name: 'armados',
     template: '#mainarmados',
+    components: {
+        'maps': mapsVue,
+    }, 
     props: [],
     data() {
         return {

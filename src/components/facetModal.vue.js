@@ -1,3 +1,5 @@
+import {remove_solr_sufix} from '../../functions.js'
+
 export default{
     name: 'facetModal',
     template: '#modal-template',

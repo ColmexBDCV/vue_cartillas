@@ -14,7 +14,7 @@ export function article_filter(key){
 }
 
 
-function remove_solr_sufix(key) {
+export function remove_solr_sufix(key) {
     key = key.replace("_tesim", "");
     key = key.replace("_ssim", "");
     key = key.replace(" Sim", "");

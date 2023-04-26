@@ -15,6 +15,7 @@ export default{
             collection: "todo",
             api_data: '',
             data_markers: [],
+            visible: true,
             //markers: L.layerGroup(),
             markers: L.markerClusterGroup({
                 spiderfyOnMaxZoom: true,
@@ -24,7 +25,7 @@ export default{
                 maxClusterRadius: 0
             }),
             map: null,
-            url_api: 'https://repositorio.colmex.mx/all_coordinates?query=thematic_collection_tesim:%22RDDM%22&fields=id,title_tesim,based_near_tesim,has_model_ssim,thumbnail_path_ss,hasRelatedMediaFragment_ssim',
+            url_api: 'https://repositorio.colmex.mx/all_coordinates?query=thematic_collection_tesim:%22Cart%C3%ADllas+ind%C3%ADgenas+ILV%22&fields=id,title_tesim,has_model_ssim,thumbnail_path_ss,hasRelatedMediaFragment_ssim',
         }
     },
     watch:{
@@ -36,30 +37,34 @@ export default{
     methods:{
         init_map(){
             var mbAttr = 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>';
-            var mbUrl = 'https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw';
+            var mbUrl = 'https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoiZWNpc25lcm9zIiwiYSI6ImNsZ2I4OGZsNjA0Y2YzbXMxYzQxb3pvaGgifQ.Dw_N62BZTbOynrGXwmLEpQ';
             
+            var satellite = L.tileLayer(mbUrl, {id: 'mapbox/satellite-v9', tileSize: 512, zoomOffset: -1, attribution: mbAttr});
             var grayscale = L.tileLayer(mbUrl, {id: 'mapbox/light-v9', tileSize: 512, zoomOffset: -1, attribution: mbAttr});
 	        var streets = L.tileLayer(mbUrl, {id: 'mapbox/streets-v11', tileSize: 512, zoomOffset: -1, attribution: mbAttr});
-            var satellite = L.tileLayer(mbUrl, {id: 'mapbox/satellite-v9', tileSize: 512, zoomOffset: -1, attribution: mbAttr});
 
             this.map = L.map('maps', {
                 center: [23, -102],
                 zoom: 5,
-                layers: [grayscale]
+                fullscreenControl: true,
+                fullscreenControlOptions: {
+                    position: 'topleft'
+                },
+                layers: [satellite]
             });
             var baseLayers = {
+                'Satellite': satellite,
                 'Grayscale': grayscale,
-                'Streets': streets,
-                'Satellite': satellite
+                'Streets': streets,                
             };
-            //var layerControl = L.control.layers(baseLayers).addTo(this.map);
-            L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+            var layerControl = L.control.layers(baseLayers).addTo(this.map);
+            /*L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
                 attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributor',    
                 maxZoom: 16,
-                id: 'mapbox/streets-v11',
+                id: 'mapbox/satellite-v9',
                 tileSize: 512,
                 zoomOffset: -1,
-            }).addTo(this.map);
+            }).addTo(this.map);*/
 
             this.get_data();
         },
@@ -79,14 +84,14 @@ export default{
             });*/
 
             for(var i=0; i < this.api_data.length; i++){
-                var elemento = this.api_data[i];
-                var coordinates = elemento.coordinates;
+                var elemento = this.api_data[i];                
+                var coordinates = elemento.based_near_coordinates_tesim;
                 for(var j=0; j < coordinates.length; j++){
                     var json_data = {};
-                    var coords = coordinates[j];
-                    var marker = L.marker(new L.LatLng(coords.lat, coords.lng));
+                    var coords = coordinates[j].split('|');
+                    var marker = L.marker(new L.LatLng(coords[0], coords[1]));
                     //var marker = L.marker([coords.lat, coords.lng]).addTo(this.map);
-                    marker.bindPopup('<a href="#/docs?id='+ elemento.id +'&amp;has_model='+ elemento.has_model_ssim[0] +'&amp;thumbnail='+ elemento.thumbnail_path_ss +'&amp;related='+ elemento.hasRelatedMediaFragment_ssim[0] +'">' + elemento.title_tesim[0] + '</a>', {
+                    marker.bindPopup('<a href="#/docs?id='+ elemento.id +'&amp;has_model='+ elemento.has_model_ssim[0] +'&amp;thumbnail='+ elemento.thumbnail_path_ss +'&amp;related='+ elemento.hasRelatedMediaFragment_ssim[0] +'&amp;back_maps=true">' + elemento.title_tesim[0] + '</a>', {
                         closeButton: false
                     }).openPopup();
                     this.markers.addLayer(marker);
@@ -96,6 +101,7 @@ export default{
                 }
             }
             //this.markers.addTo(this.map);
+            this.visible= false; 
             this.create_list();
             this.map.addLayer(this.markers);
             /*this.api_data.forEach(function(elemento, indice, array) {
@@ -149,6 +155,7 @@ export default{
         }
     },
     mounted(){
+        this.visible = true; 
         this.init_map();
     },
     computed:{

@@ -8,7 +8,7 @@ import headers from './components/headers.vue.js'
 export default{
     name: 'Searchs',
     template: '#searchview',
-	props: ['keyword', 'type', 'val', 'label', 'search_in', 'filter'],
+	props: ['keyword', 'type', 'val', 'label', 'search_in', 'filter', 'json_data'],
 	components: {
 		'facets': facets,
 		'docs': docs,

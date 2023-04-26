@@ -576,7 +576,7 @@
   width: 50%;
   margin: 0px auto;
   /*padding: 10px 20px;*/
-  background-color: rgba(60, 60, 60, 0.96);
+  background-color: #FFFFFF;
   border-radius: 2px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, .33);
   transition: all .3s ease;
@@ -584,7 +584,7 @@
 }
 
 .modal-header {
-  background-color:  #7b213d;
+  background-color:  #E3027C;
   color: #ffffff;
   font-size: 20px;
 }
@@ -654,15 +654,21 @@
 }
 
 .btn-per_pagina {
-  color: rgb(255, 255, 255) !important;
+  /*color: rgb(255, 255, 255) !important;*/
   border: 1px solid #DCE4E3;
   background-color: #FFFFFF;
+  box-shadow:none !important;
+  font-size: 75% !important;
 }
 
 .btn-languaje {
   color: rgb(255, 255, 255);
   border: 1px solid #6b163a;
   background-color: #6b163a;
+}
+
+.accordion-button{
+  border: none !important;
 }
 
 .btn-languaje:hover {
@@ -734,7 +740,7 @@
   display: block;
   padding: 5px 10px;
   margin-bottom: -1px;
-  background-color: rgba(60, 60, 60, 0.96);
+  background-color: #FFFFFF;
   border: 1px solid #ddd;
 }
 
@@ -817,6 +823,7 @@
 
 #app button{
   font-weight: 300;
+  text-transform: UPPERCASE;
 }
 
 #app button:focus{
@@ -830,6 +837,10 @@
 
 .facet-label{
   font-size: 12px;
+}
+
+.list-group-item{
+  border: none !important;
 }
 
 #app .pagination a:hover{
@@ -856,6 +867,10 @@
   font-size: 1.5rem;
 }
 
+/*.nav-item{
+  min-width: 90px;
+}*/
+
 .header-site .nav-horizontal > ul > li > a {
   text-decoration: none;
 }
@@ -868,13 +883,23 @@
   /*color: whitesmoke !important;*/
 }
 
+a.router-link-active{
+  padding-right: 6% !important;
+}
+
+input.globalsearch {
+  padding-left: 5px;
+  font-style: italic;
+}
+
 .modal-footer .btn-modal {
-  color: #454545;
-  background-color: #DCE4E3;
-  border-color: #DCE4E3;
+  color: #FFFFFF;
+  background-color: #E3027C;
+  border-color: #E3027C;
   /*border-radius: 0px;*/
-  padding: .375rem .75rem;;
-  /*font-size: 1.3rem;*/
+  padding: 0.2rem 1rem;
+  font-size: 16px;
+  text-transform: none !important;
 }
 
 .table-docs .table-metadatos{
@@ -905,6 +930,7 @@
 
 .title-docs h2{
   font-family: 'Open Sans', sans-serif;
+  color: #5B2779;
 }
 
 .table-docs th,
@@ -927,6 +953,7 @@
 
 .td-tittle{
   font-weight: bold;
+  color: #5B2779;
 }
 
 .row-docs{
@@ -969,6 +996,7 @@
 
 .table-metadatos th{
   border-color: #00313E;
+  color: #5B2779;
 }
 
 .elements-title{
