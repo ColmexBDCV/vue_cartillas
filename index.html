@@ -87,7 +87,7 @@
                     <div class="col-3">
 
                     </div>
-                    <div class="col-6">
+                    <div :class="[isMobile ? 'col-12': 'col-6']">
                         <div class="input-group">
                             <input type="text" class="form-control search-input" :placeholder="$t('search_term')"
                                 v-model="search" name="keyword" @keyup.enter="send_data()" />
@@ -159,8 +159,8 @@
                     <div class="col-3">
 
                     </div>
-                    <div class="col-6">
-                        <div class="d-grid gap-2 fw-bolder fs-4">
+                    <div :class="[isMobile ? 'col-12': 'col-6']">
+                        <div class="d-grid gap-2 fw-bolder" :class="[isMobile ? 'fs-7':'fs-4']">
                             <p>Explore más de 600 cartillas de lenguas indígenas mexicanas, publicadas en México, 
                                 desde 1940 hasta 1980.  Proyecto colaborativo de la Biblioteca Daniel Cosío Villegas 
                                 de El Colegio de México y el Instituto Lingüístico de Verano, A.C. 
@@ -210,7 +210,7 @@
                             <span class="logo"><img src="src/assets/cartillas.png" alt=""
                                     class="d-inline-block align-text-top"></span></router-link>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                             aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
@@ -300,7 +300,7 @@
                 </div>
             </div>
             <div class="bg-pages">
-                <div class="container" style="height: 100%;">
+                <div class="" style="height: 100%;" :class="[isMobile ? '':'container']">
                     <div class="contained">
                         <div class="row">
                             <div class="col-3 col-normal">
@@ -313,7 +313,7 @@
                                     :params="this.params">
                                 </facets>
                             </div>
-                            <div class="col-9 show-all">
+                            <div class="show-all" :class="[isMobile ? 'col-12':'col-9']">
                                 <!--<search :keyword="keyword" :pages="repo.pages"></search>-->
                                 <helperbar :pages="repo.pages" ref="pagination" :total="repo.total_pages"></helperbar>
                                 <docs :docs="repo.docs"></docs>
@@ -329,7 +329,7 @@
     </template>
     <template id="docs">
         <div class="docs_view container">
-            <div class="row" v-for="doc in docs">
+            <div class="row" :class="[isMobile ? 'isMobileWith': 'other']" v-for="doc in docs">
                 <router-link class="mt-5 mb-3"
                     :to="{path: 'docs', query: {id: doc.id, has_model: doc.has_model, thumbnail: doc.thumbnail_path_ss, related: doc.hasRelatedMediaFragment, keyword: keyword}}">
                     <h6> <strong>{{ doc.title[0] }}</strong> </h6>
@@ -362,7 +362,7 @@
                         </tbody>
                     </table>-->
                     <div class="row" v-for="(metadata, key, index) in doc" v-if="check_metadata(metadata, key)">
-                        <div class="td-tittle col-5" style="text-align: right;">
+                        <div class="td-tittle col-5" :class="[isMobile ? 'text-left' : 'text-right']">
                             {{ $t(key) }}
                         </div>
                         <div v-if="isObject(metadata)" class="col-7" style="text-align: left;">
@@ -438,16 +438,16 @@
             </div>
             <div v-if="pages != undefined">
                 <div style="display: contents;" class="row" v-if="pages.total_count != 0">
-                    <div class="paginator-top btn-group bd-highlight col-md-auto">
+                    <div class="paginator-top btn-group bd-highlight" :class="[isMobile ? 'col-6':'col-md-auto']">
                         <nav aria-label="Paginas disponibles" style="text-align: left; display: inline">
                             <ul class="pagination">
                                 <li class="page-item" v-if="pages.current_page != 1">
                                     <a class="page-link" @click="next_page(pages.prev_page)" href="#">
-                                        <<&nbsp;{{$t('previous')}} </a>
+                                        <<&nbsp;<span v-if="!isMobile">{{$t('previous')}}</span> </a>
                                 </li>
                                 <li class="page-item disabled" v-if="pages.current_page == 1">
                                     <span class="page-link">
-                                        <<&nbsp;{{$t('previous')}} </span>
+                                        <<&nbsp;<span v-if="!isMobile">{{$t('previous')}}</span> </span>
                                 </li>
                                 <li class="page-item">
                                     <span class="page-link">|&nbsp;{{pages.offset_value + 1}} -
@@ -457,15 +457,15 @@
                                 </li>
                                 <li class="page-item" v-if="pages.current_page < pages.total_pages">
                                     <a class="page-link" @click="next_page(pages.next_page)"
-                                        href="#">{{$t('next')}}&nbsp;>></a>
+                                        href="#"><span v-if="!isMobile">{{$t('next')}}</span>&nbsp;>></a>
                                 </li>
                                 <li class="page-item disabled" v-if="pages.current_page == pages.total_pages">
-                                    <span class="page-link">{{$t('next')}}&nbsp;>></span>
+                                    <span class="page-link"><span v-if="!isMobile">{{$t('next')}}</span>&nbsp;>></span>
                                 </li>
                             </ul>
                         </nav>
                     </div>
-                    <div class="dropdown order-by bd-highlight col-md-auto">
+                    <div class="dropdown order-by bd-highlight" :class="[isMobile ? 'col-3':'col-md-auto']">
                         <a style="float: right;" class="btn dropdown-toggle btn-per_pagina" href="#" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false" id="dropdownMenu">
                             {{paginas}} {{$t('per_page')}}
@@ -477,7 +477,7 @@
                             <li><a class="dropdown-item" href="#" @click="per_pages(100)">100</a></li>
                         </ul>
                     </div>
-                    <div class="dropdown order-by bd-highlight col-md-auto">
+                    <div class="dropdown order-by bd-highlight" :class="[isMobile ? 'col-3':'col-md-auto']">
                         <a style="float: right;" class="btn  dropdown-toggle btn-per_pagina" href="#" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false" id="dropdownMenu">
                             {{$t('order_by')}} {{ order }}
@@ -520,9 +520,9 @@
         </div>
     </template>
     <script type="text/template" id="facetas">
-            <nav class="navbar navbar-expand-lg navbar-dark menu-facetas">
+            <nav class="navbar navbar-expand-lg navbar-light menu-facetas">
                 <div class="">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="#navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="navbar-collapse collapse" id="navbarNavDropdown">

@@ -367,3 +367,12 @@ a:hover{
     padding-bottom: 10px;
     padding-right: 5px;
 }
+
+@media screen and (max-width: 480px) {
+    .divsearch {
+      width: 100%;
+    }
+    .docs_view .row{
+        display: table-header-group;
+      }
+  }

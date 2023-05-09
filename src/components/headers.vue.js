@@ -9,6 +9,7 @@ export default{
             lcl_search: this.search_in,
             lcl_filter: this.filter,
             json_fields: {},
+            isMobile: false,
             array_fields: [
                 "all_fields",
                 "title",
@@ -94,10 +95,16 @@ export default{
         },
         reload(event){
             this.clean_search();
+        },
+        mediasize() {
+            this.isMobile = window.matchMedia('(max-width: 768px)').matches
+            ? true : false;
+            console.log("Mobile: " + this.isMobile);
         }
 
     },
     mounted(){
+        this.mediasize();
         console.log(this.is_home);
         if(this.lcl_search == 'advanced'){
             var data = JSON.parse(this.json_data);

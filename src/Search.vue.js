@@ -18,7 +18,7 @@ export default{
 	},
 	data: function(){
 		return{
-
+			isMobile: false,
 		} 
 	},
 	computed: {
@@ -32,10 +32,18 @@ export default{
 	created: function () {
 		//this.get_data();
 	},
+	mounted(){
+		this.mediasize();
+	},
 	methods: {
 		get_data() {
 			//alert("Search");
 			this.$store.dispatch('principal/get_data', this.$store.getters['principal/url']);
-		}
+		},
+		mediasize() {
+            this.isMobile = window.matchMedia('(max-width: 768px)').matches
+            ? true : false;
+            console.log("Mobile: " + this.isMobile);
+        }
 	},
 }

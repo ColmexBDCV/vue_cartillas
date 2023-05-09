@@ -1113,6 +1113,9 @@ input.globalsearch {
   .search-form .form-control{
     width: 85%;
   }
+  .row{
+    width: 95% !important;
+  }
 }
 
 @media (max-width: 425px){
@@ -1140,4 +1143,8 @@ input.globalsearch {
   box-shadow: none;
   background-color: var(--first-color);
   border-color: var(--first-color);
+}
+
+.isMobileWith{
+
 }
