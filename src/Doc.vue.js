@@ -5,7 +5,7 @@ import {article_filter,openPDF, read_pdfid, newCopyClipboard} from '../functions
 export default{
     name: 'Doc',
     template: '#docview',
-    props: ['id','has_model', 'thumbnail', 'related', 'keyword'],
+    props: ['id','has_model', 'thumbnail', 'related', 'keyword', 'back_maps'],
     data: function(){
         return {
             url_doc: this.$store.getters['principal/base_url']+'concern/',
@@ -36,7 +36,7 @@ export default{
         }
 	},
 	created: function () {
-        //alert(this.has_model);
+        //alert(this.back_maps);
 
         this.url_file = this.url_file + 'parent/' + this.id + '/file_sets/' + this.related + '.json';
         this.url_doc = this.url_doc + models.types[this.has_model] + '/' + this.id + '.json';
@@ -105,7 +105,7 @@ export default{
         },
         init_map(){
             var mbAttr = 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>';
-            var mbUrl = 'https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw';
+            var mbUrl = 'https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoiZWNpc25lcm9zIiwiYSI6ImNsZ2I4OGZsNjA0Y2YzbXMxYzQxb3pvaGgifQ.Dw_N62BZTbOynrGXwmLEpQ';
             
             var grayscale = L.tileLayer(mbUrl, {id: 'mapbox/light-v9', tileSize: 512, zoomOffset: -1, attribution: mbAttr});
 	        var streets = L.tileLayer(mbUrl, {id: 'mapbox/streets-v11', tileSize: 512, zoomOffset: -1, attribution: mbAttr});
@@ -114,24 +114,25 @@ export default{
             this.map = L.map('maps', {
                 center: [23, -102],
                 zoom: 5,
-                layers: [grayscale]
+                layers: [satellite]
             });
             var baseLayers = {
                 'Grayscale': grayscale,
                 'Streets': streets,
                 'Satellite': satellite
             };
-            //var layerControl = L.control.layers(baseLayers).addTo(this.map);
+            var layerControl = L.control.layers(baseLayers).addTo(this.map);
             
-            L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+            /*L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
                 attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributor',    
                 maxZoom: 18,
                 id: 'mapbox/streets-v11',
                 tileSize: 512,
                 zoomOffset: -1,
-            }).addTo(this.map);
+            }).addTo(this.map);*/
+
             var marker = L.marker([this.geonames_data.lat, this.geonames_data.lng]).addTo(this.map);
-            marker.bindPopup(this.geonames_data.name + ", " + this.geonames_data.adminName2 + ", " + this.geonames_data.adminName1).openPopup();
+            marker.bindPopup('<a href="./#/search?type=based_near_label_sim&amp;val='+ this.geonames_data.name +'&amp;label=Ubicación">'+this.geonames_data.name + ", " + this.geonames_data.adminName2 + ", " + this.geonames_data.adminName1 + '</a>').openPopup();
         },
 	},
 }

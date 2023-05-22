@@ -23,6 +23,7 @@ export default{
     compiler: 'Compilador',
     "contained in" : 'Incluido en:',
     photographer : 'Fotografia',
+    "based near label": "Ubicación",
 
     //Translate for Docs and Docs View
     depositor: 'Subido por',

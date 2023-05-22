@@ -1,33 +1,43 @@
 <template id="docview">
     <div class="bg-pages">
-        <div style="background-color: rgb(245 245 245); width: 100%; border-bottom: 5px solid #5E002B;">
+        <div style="width: 100%; border-bottom: 7px solid rgb(91,39,121);">
             <div class="container">
                 <headers :keyword="keyword"></headers>
             </div>
         </div>
         <div class="container" style="height: 100%;">
             <div class="contained">
-                <div class="col-sm-12 docs-view">
-                    <div class="button-docs col-sm-12">
-                        <button type="button" class="btn" v-if="keyword != undefined">
-                            <router-link :to="'/search?keyword=' + keyword" style="color:black; font-style: normal; text-decoration: none;"> << {{$t('back_docs')}}
+                <div class="col-12 docs-view">
+                    &nbsp;
+                    <div class="button-docs col-12">&nbsp;
+                        <button type="button" class="btn" v-if="keyword != undefined && back_maps == undefined">
+                            <router-link :to="'/search?keyword=' + keyword" style="color:black; font-style: normal; text-decoration: none; vertical-align: middle;"> << {{$t('back_docs')}}
                             </router-link>
                         </button>
-                        <button type="button" class="btn" v-if="keyword == undefined">
-                            <router-link to="/search" style="/*color:whitesmoke;*/ font-style: normal; text-decoration: none; vertical-align: middle;"> <span class="material-icons">
+                        <button type="button" class="btn" v-if="keyword == undefined && back_maps == undefined">
+                            <router-link to="/search" style="/*color:whitesmoke;*/ font-style: normal; text-decoration: none; vertical-align: middle;">
+                                 <span class="material-icons" style="vertical-align: middle;">
                                 arrow_back
                                 </span> {{$t('back_docs')}}
+                            </router-link>
+                        </button>
+                        <button type="button" class="btn" v-if="back_maps == 'true'">
+                            <router-link to="/maps" style="color:black; font-style: normal; text-decoration: none;"> 
+                                <span class="material-icons" style="vertical-align: middle;">
+                                    arrow_back
+                                    </span> 
+                                     {{$t('back_docs')}}
                             </router-link>
                         </button>
                     </div>
                     <div class="container" style="display: inline-flex;">        
                         <div class="row row-docs">
-                            <div class="title-docs col-sm-12">
+                            <div class="title-docs col-12">&nbsp;
                                 <div class="title-docs" v-if="doc.title != undefined">
                                     <strong><h2>{{doc.title[0]}}</h2></strong>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-6">
                                 <table class="table table-metadatos">
                                     <tbody v-for="(metadata, key, index) in doc" v-if="filter_key(metadata,key)">
                                         <tr>
@@ -43,7 +53,7 @@
                                                             {{ content }}
                                                         </dd>
                                                     </dl>
-                                                    <a v-if="key != 'table_of_contents'" :href="'/busqueda/#/search?type=' + key + '_sim&val=' + m +'&label=' + $t(key)">{{ m }}</a>
+                                                    <a v-if="key != 'table_of_contents'" :href="'./#/search?type=' + key + '_sim&val=' + m +'&label=' + $t(key)">{{ m }}</a>
                                                 </div>
                                             </td>
                                             <td v-else>
@@ -73,7 +83,7 @@
                                     </tfoot>-->
                                 </table>
                             </div>
-                            <div class="col-md-6 pdf-content">
+                            <div class="col-6 pdf-content">&nbsp;
                                 <input type="hidden" name="copyClipboard" id="copyClipboard" :value="this.url_share"/>             
                                 <div class="pdf-viewer" v-if="related != undefined && doc.item_access_restrictions != 'Acceso restringido'">
                                     <input type="hidden" id="pdf_id" :value="this.$store.getters['principal/base_url'] + 'downloads/'+ related" />
@@ -147,6 +157,10 @@
                             </div>-->
                             <div id="maps" class="mt-3" ref="maps" style="height: 600px; width: 100%;">
             
+                            </div>
+                            <div class="row mt-3 mb-3">
+                                <div class="col-12"></div>
+
                             </div>
                             <div class="elements-title">Elementos</div>
                             <div class="row data-title">

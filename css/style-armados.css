@@ -102,9 +102,13 @@ body{
     outline: none;
 }
 
+.paginator-top.btn-group.bd-highlight.col-md-auto {
+    padding-right: 5%;
+    font-size: 75%;
+}
 
 .logo img{
-    height: 45px;
+    height: 88px;
     vertical-align: sub;
 }
 
@@ -118,8 +122,20 @@ body{
 }
 
 .bg-facetas{
-    background-color: #000000 !important;
+    background-color: #E3027C !important;
     color: var(--white-color);
+}
+
+.bg-facetas a{
+    color: #ffffff;
+}
+
+.accordion-button{
+    background-color: #E3027C !important;
+}
+
+.page-link{
+   color: #4274B7 !important;
 }
 
 .bg-facetas .accordion-body{
@@ -171,7 +187,7 @@ body{
 }
 
 a{
-    color: var(--gray-color);
+    color: #5B2779;
 }
 
 a:hover{
@@ -201,9 +217,18 @@ a:hover{
     width: 100%;
 }
 
+.navbar-light .navbar-nav .nav-link{
+    color: #5B2779;
+}
+
+.navbar-light .navbar-nav .nav-link:hover{
+    color: #F6F30B;
+}
+
 .nav-armados .nav-link{
     padding-left: 0px !important;
     padding-right: 20px !important;
+    
 }
 
 .bg-advanced{
@@ -237,8 +262,9 @@ a:hover{
     background-color: transparent;
     padding: 10px 10px;
     color: var(--white-color);
-    width: 30%;
+    width: 100%;
     text-align: center;
+    /*margin-top: 70px;*/
     /*float: right;*/
 }
 
@@ -251,6 +277,7 @@ a:hover{
     font-family: 'Playfair Display', serif;
     margin-top: 60px;
     margin-bottom: 20px;
+    color: #5B2779;
 }
 
 .search-form .form-control, .form-select{
@@ -340,3 +367,12 @@ a:hover{
     padding-bottom: 10px;
     padding-right: 5px;
 }
+
+@media screen and (max-width: 480px) {
+    .divsearch {
+      width: 100%;
+    }
+    .docs_view .row{
+        display: table-header-group;
+      }
+  }

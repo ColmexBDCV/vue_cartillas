@@ -5,7 +5,8 @@ export default{
     data(){
         return{
             paginas: 10,
-            order: 'Relevancia'
+            order: 'Relevancia',
+            isMobile: false,
         }
     },
     methods:{
@@ -57,6 +58,11 @@ export default{
                 var label = data.key;
                 this.$store.dispatch('filters/delete_query', {type, val, label});
             });
+        },
+        mediasize() {
+            this.isMobile = window.matchMedia('(max-width: 768px)').matches
+            ? true : false;
+            console.log("Mobile: " + this.isMobile);
         }
     },
     watch: {
@@ -75,5 +81,8 @@ export default{
         filters(){
             return this.$store.getters['filters/filter'];
         }
+    },
+    mounted(){
+        this.mediasize();
     }
 }
