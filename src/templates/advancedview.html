@@ -8,13 +8,27 @@
         <div class="container" style="height: 100%;">
             <div class="">
                 <div class="row">
-                    <div class="col">
+                    <div class="col-12">
                         <div class="title">
                             Busqueda Avanzada
                         </div>
                     </div>
-                    <div>
-                        <form action="" method="get">
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="mb-3">
+                            Encuentra recursos que coincidan con
+                                <select v-model="search_type">
+                                    <option value="OR" selected>cualquiera de los</option>
+                                    <option value="AND">todos los</option>
+                                </select>
+                            terminos.
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-7">                       
+                        <!--<form action="" method="get">-->                           
                             <div class="mb-3">
                                 <label for="exampleFormControlInput1" class="form-label">Todos los campos</label>
                                 <input type="text" v-model="all_fields" class="form-control" id="exampleFormControlInput1" placeholder="Palabra clave">
@@ -77,11 +91,48 @@
                             </div>
                             <div class="mb-3">
                                 <div class="d-grid gap-2">
-                                    <button type="submit" class="btn btn-primary mb-3">Buscar</button>
+                                    <button type="submit" v-on:click="search_advanced()" class="btn btn-primary mb-3">Buscar</button>
                                 </div>                                    
                             </div>
-                        </form>                        
-                    </div>                    
+                        <!--</form>                        -->
+                    </div>
+                    <div class="col-3">
+                        <div class="align-middle mt-3">
+                            <div class="card">
+                                <div class="card-header">
+                                    Consejos de búsqueda
+                                </div>
+                                <div class="card-body">
+                                  <ul>
+                                    <li>
+                                        Seleccione "coincidir todos" para encontrar recursos que continen todos los términos.
+                                    </li>
+                                    <li>
+                                        Seleccione "coincidir con cualquiera" para encontrar recursos que contienen al menos un término.
+                                    </li>
+                                    <li>
+                                        Combine términos para encontrar recursos específicos.
+                                    </li>
+                                    <li>
+                                        Utilice comillas para buscar como una frase.
+                                    </li>
+                                    <li>
+                                        Use "+" antes de un término para hacerlo requerido. (De lo contrario, se pueden incluir los resultados que coincidan solo con algunos de sus términos).
+                                    </li>
+                                    <li>
+                                        Use "-" antes de una palabra o frase para excluir.
+                                    </li>
+                                    <li>
+                                        Use "OR", "AND", y "NOT" para crear una lógica booleana compleja. Puedes usar paréntesis en tus expresiones complejas.
+                                    </li>
+                                    <li>
+                                        El truncamiento y los comodines no son compatibles: la separación de palabras se realiza automáticamente.
+                                    </li>
+                                  </ul>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>                  
                 </div>
             </div>
             <!--<div class="row mt-5">

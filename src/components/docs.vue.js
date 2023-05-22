@@ -4,6 +4,11 @@ export default {
     name: 'docs',
     props: ['docs', 'keyword'],
     template: "#docs",
+    data: function(){
+        return{
+            isMobile: false,
+        }
+    },
     methods: {
         get_url(){
             return this.$store.getters['principal/base_url']
@@ -28,6 +33,14 @@ export default {
         isObject(o) {
             //console.log("keyword: " + this.keyword);
             return typeof o == "object"
+        },
+        mediasize() {
+            this.isMobile = window.matchMedia('(max-width: 768px)').matches
+            ? true : false;
+            console.log("Mobile: " + this.isMobile);
         }
+    },
+    mounted(){
+        this.mediasize();
     }
 }

@@ -1,6 +1,6 @@
 <template id="maps">
     <div class="bg-pages about-page">
-        <div style="background-color: rgb(245 245 245); width: 100%; border-bottom: 5px solid #5E002B;">
+        <div style="width: 100%; border-bottom: 7px solid rgb(91,39,121);">
             <div class="container">
                 <headers :keyword="search" :search_in="search_in" is_page="true"></headers>
             </div>
@@ -19,14 +19,19 @@
                     <!--<div id="map" ref="map">
             
                     </div>-->
-                    <div>
+                    <div>                        
                         <div style="background-color: whitesmoke;">
+                            <div v-if="visible" id="loadtmp" class="align-middle text-center" style="position: absolute; z-index: 2000; background: #000000a6;
+                            color: white; width: 68%; height: 600px;">
+                                <img src="./src/assets/location_2.gif" style="width: 30%;"/>
+                                <p class="fs-2">Obteniendo Ubicación de Cartillas</p>
+                            </div>                                                     
                             <div id="maps" ref="maps" style="height: 600px; width: 75%; float:left">
             
                             </div>
                             <div style="width: 25%; float: left; background-color: #FFFFFF; min-height: 600px; max-height: 600px; overflow-y: scroll;">
                                 <ul id="item-list" class="map-list">
-                                    
+                                                           
                                 </ul>                            
                             </div>
                         </div>                        

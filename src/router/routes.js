@@ -16,7 +16,13 @@ var routes = [
   {
     path: '/docs',
     component: Doc,
-    props: (route) => ({ id: route.query.id, has_model: route.query.has_model, thumbnail: route.query.thumbnail, related: route.query.related, keyword: route.query.keyword})
+    props: (route) => ({  id: route.query.id, 
+                          has_model: route.query.has_model, 
+                          thumbnail: route.query.thumbnail, 
+                          related: route.query.related, 
+                          keyword: route.query.keyword,
+                          back_maps: route.query.back_maps,
+                        })
   },
   {
     path: '/videos',
@@ -26,12 +32,14 @@ var routes = [
     path: '/search',
     name: 'search',
     component: Search,
-    props: (route) => ({ keyword: route.query.keyword, 
+    props: (route) => ({  keyword: route.query.keyword, 
                           type: route.query.type, 
                           val: route.query.val, 
                           label: route.query.label,
                           search_in: route.query.search_in,
-                          filter: route.query.filter })
+                          filter: route.query.filter,
+                          json_data: route.query.json_data 
+                        })
   },
   {
     path: '/about',

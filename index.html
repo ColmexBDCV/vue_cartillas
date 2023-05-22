@@ -12,11 +12,18 @@
     <div id="app" style="height: 100%;">
         <router-view></router-view>
         <footer>
-            <div>
+            <div> 
                 <div style="background-color: #F5F5F5; height: 100px; border-bottom: solid 3px #E5E4E3; text-align: center;"
                     class="p-3">
-                    <img src="src/assets/bdcv_project.png" class="me-5" alt="">
-                    <img src="src/assets/footer_logo_instituto.png" alt="">
+                    <a href="https://colmex.mx">
+                        <img src="src/assets/logo_colmex.svg" width="350px" class="me-5" alt="">
+                    </a>
+                    <a href="https://biblioteca.colmex.mx/">
+                        <img src="src/assets/bdcv_project.png" class="me-5" alt="">
+                    </a> 
+                    <a href="https://mexico.sil.org/es">
+                        <img src="src/assets/footer_logo_instituto.png" alt="">
+                    </a>  
                 </div>
                 <div style="background-color: #F5F5F5; height: 100px; text-align: center;" class="p-4">
                     <p>
@@ -61,10 +68,10 @@
     <template id="home">
         <div class="bg" style="height: 100%;">
             <div
-                style="background-color: rgb(245 245 245); width: 100%; position: absolute; border-bottom: 5px solid #5E002B;">
+                style="background-color: rgb(250 250 250); width: 100%; position: absolute; border-bottom: 7px solid rgb(91,39,121);">
                 <div class="container">
                     <headers :keyword="keyword" :pages="repo.pages" :filter="filter" :search_in="search_in"
-                        is_page="false"></headers>
+                        is_page="false" is_home="true"></headers>
                 </div>
             </div>
             <div class="container" style="height: 100%;">
@@ -74,10 +81,13 @@
     </template>
     <template id="mainarmados">
         <div class="first-search center">
-            <div class="title text-center"><strong>¡Bienvenido!</strong></div>
-            <div class="search-form">
+            <div class="title text-center"><strong><!--¡Bienvenido!--></strong></div>
+            <div class="search-form text-center" >
                 <div class="row mt-2">
-                    <div class="col-12">
+                    <div class="col-3">
+
+                    </div>
+                    <div :class="[isMobile ? 'col-12': 'col-6']">
                         <div class="input-group">
                             <input type="text" class="form-control search-input" :placeholder="$t('search_term')"
                                 v-model="search" name="keyword" @keyup.enter="send_data()" />
@@ -116,8 +126,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </transition>
-
+                        </transition>                        
                         <!--<input type="text" class="form-control search-input" :placeholder="$t('search_term')"
                             v-model="search" name="keyword" @keyup.enter="send_data()" />
                             <span class="input-group-btn">
@@ -125,6 +134,9 @@
                                     <span class="glyphicon glyphicon-search"></span> {{$t('go')}}
                                 </button>
                             </span>-->
+                    </div>
+                    <div class="col-3">
+
                     </div>
                 </div>
                 <!--<div class="row mt-4">
@@ -139,23 +151,29 @@
                         </div>
                     </div>-->
                 <div class="row ">
-                    <div class="col-12">
+                    <div class="col-7">
 
                     </div>
                 </div>
                 <div class="row mt-2">
-                    <div class="col-12">
-                        <div class="d-grid gap-2 fw-bolder">
-                            <p>Explore más de 600 cartillas de lectoescritura publicadas en México
-                                desde 1940 hasta 1980. Creado en conjunto por la Biblioteca Daniel Cosío Villegas del
-                                COLMEX y el Instituto Linguistico de Verano, A.C.
+                    <div class="col-3">
+
+                    </div>
+                    <div :class="[isMobile ? 'col-12': 'col-6']">
+                        <div class="d-grid gap-2 fw-bolder" :class="[isMobile ? 'fs-7':'fs-4']">
+                            <p>Explore más de 600 cartillas de lenguas indígenas mexicanas, publicadas en México, 
+                                desde 1940 hasta 1980.  Proyecto colaborativo de la Biblioteca Daniel Cosío Villegas 
+                                de El Colegio de México y el Instituto Lingüístico de Verano, A.C. 
                             </p>
                             <!--<button type="button" class="btn btn-primary" @click="send_data">
                                 <span class="glyphicon glyphicon-search"></span> Buscar
                             </button>-->
                         </div>
                     </div>
-                </div>
+                    <div class="col-3">
+
+                    </div>
+                </div>                
                 <!--<div class="row mt-5 justify-content-center">
                     <div class="col-12">
                         <ul class="nav nav-search">
@@ -179,29 +197,31 @@
                     </div>
                 </div>-->
             </div>
+            
         </div>
+        
     </template>
     <template id="headers">
-        <div class="" style="background-color: #F5F5F5;">
+        <div class="" >
             <div class="row header">
                 <nav class="navbar navbar-expand-lg navbar-light">
                     <div class="container-fluid">
-                        <a class="navbar-brand" href="#">
-                            <span class="logo"><img src="src/assets/logo_cartillas.svg" alt=""
-                                    class="d-inline-block align-text-top"></span></a>
+                        <router-link class="" to="/">
+                            <span class="logo"><img src="src/assets/cartillas.png" alt=""
+                                    class="d-inline-block align-text-top"></span></router-link>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                             aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-start">
-                                <li class="nav-item">
+                                <!--<li class="nav-item">
                                     <router-link class="nav-link" to="/">INICIO</router-link>
                                     <!--<a class="nav-link " aria-current="page" href="#">Inicio</a>-->
-                                </li>
-                                <li class="nav-item">
-                                    <router-link class="nav-link" to="about">EL PROYECTO</router-link>
+                                <!--</li>-->
+                                <li class="nav-item" style="min-width: 90px;">
+                                    <router-link class="nav-link" to="about">ACERCA DE</router-link>
                                     <!--<a class="nav-link" href="#">Sobre el sitio</a>-->
                                 </li>
                                 <li class="nav-item">
@@ -213,15 +233,15 @@
                                     <!--<a class="nav-link " href="#">Personas Mencionadas</a>-->
                                 </li>
                                 <li class="nav-item">
-                                    <router-link class="nav-link" to="personas">CONTACTAR</router-link>
+                                    <router-link class="nav-link" to="personas">CONTACTO</router-link>
                                     <!--<a class="nav-link " href="#">Personas Mencionadas</a>-->
                                 </li>
                             </ul>
                         </div>
-                        <div class="divsearch">
+                        <div class="divsearch" v-if="is_home != 'true'">
                             <input type="search" @keyup.enter="get_search" class="globalsearch" style="width: 70%;"
                                 placeholder="Búsqueda" v-model="search" name="lname" />
-                            <button type="button" class="btn-globalsearch"><span class="material-icons">
+                            <button type="button" @click="get_search" class="btn-globalsearch"><span class="material-icons">
                                     search
                                 </span></button>
                             <button type="button" id="btn-advanced" class="btn-globalsearch btn-advanced" 
@@ -272,15 +292,15 @@
         </div>
     </template>
     <template id="searchview">
-        <div>
-            <div style="background-color: rgb(245 245 245); width: 100%; border-bottom: 5px solid #5E002B;">
+        <div style="min-height: 80%; background-color: #FFFFFF;">
+            <div style="width: 100%; border-bottom: 7px solid rgb(91,39,121);">
                 <div class="container">
                     <headers :keyword="keyword" :pages="repo.pages" :filter="filter" :search_in="search_in"
-                        is_page="false"></headers>
+                        is_page="false" :json_data="json_data"></headers>
                 </div>
             </div>
             <div class="bg-pages">
-                <div class="container" style="height: 100%;">
+                <div class="" style="height: 100%;" :class="[isMobile ? '':'container']">
                     <div class="contained">
                         <div class="row">
                             <div class="col-3 col-normal">
@@ -293,7 +313,7 @@
                                     :params="this.params">
                                 </facets>
                             </div>
-                            <div class="col-9 show-all">
+                            <div class="show-all" :class="[isMobile ? 'col-12':'col-9']">
                                 <!--<search :keyword="keyword" :pages="repo.pages"></search>-->
                                 <helperbar :pages="repo.pages" ref="pagination" :total="repo.total_pages"></helperbar>
                                 <docs :docs="repo.docs"></docs>
@@ -309,7 +329,7 @@
     </template>
     <template id="docs">
         <div class="docs_view container">
-            <div class="row" v-for="doc in docs">
+            <div class="row" :class="[isMobile ? 'isMobileWith': 'other']" v-for="doc in docs">
                 <router-link class="mt-5 mb-3"
                     :to="{path: 'docs', query: {id: doc.id, has_model: doc.has_model, thumbnail: doc.thumbnail_path_ss, related: doc.hasRelatedMediaFragment, keyword: keyword}}">
                     <h6> <strong>{{ doc.title[0] }}</strong> </h6>
@@ -342,7 +362,7 @@
                         </tbody>
                     </table>-->
                     <div class="row" v-for="(metadata, key, index) in doc" v-if="check_metadata(metadata, key)">
-                        <div class="td-tittle col-5" style="text-align: right;">
+                        <div class="td-tittle col-5" :class="[isMobile ? 'text-left' : 'text-right']">
                             {{ $t(key) }}
                         </div>
                         <div v-if="isObject(metadata)" class="col-7" style="text-align: left;">
@@ -418,16 +438,16 @@
             </div>
             <div v-if="pages != undefined">
                 <div style="display: contents;" class="row" v-if="pages.total_count != 0">
-                    <div class="paginator-top btn-group bd-highlight col-md-auto">
+                    <div class="paginator-top btn-group bd-highlight" :class="[isMobile ? 'col-6':'col-md-auto']">
                         <nav aria-label="Paginas disponibles" style="text-align: left; display: inline">
                             <ul class="pagination">
                                 <li class="page-item" v-if="pages.current_page != 1">
                                     <a class="page-link" @click="next_page(pages.prev_page)" href="#">
-                                        <<&nbsp;{{$t('previous')}} </a>
+                                        <<&nbsp;<span v-if="!isMobile">{{$t('previous')}}</span> </a>
                                 </li>
                                 <li class="page-item disabled" v-if="pages.current_page == 1">
                                     <span class="page-link">
-                                        <<&nbsp;{{$t('previous')}} </span>
+                                        <<&nbsp;<span v-if="!isMobile">{{$t('previous')}}</span> </span>
                                 </li>
                                 <li class="page-item">
                                     <span class="page-link">|&nbsp;{{pages.offset_value + 1}} -
@@ -437,15 +457,15 @@
                                 </li>
                                 <li class="page-item" v-if="pages.current_page < pages.total_pages">
                                     <a class="page-link" @click="next_page(pages.next_page)"
-                                        href="#">{{$t('next')}}&nbsp;>></a>
+                                        href="#"><span v-if="!isMobile">{{$t('next')}}</span>&nbsp;>></a>
                                 </li>
                                 <li class="page-item disabled" v-if="pages.current_page == pages.total_pages">
-                                    <span class="page-link">{{$t('next')}}&nbsp;>></span>
+                                    <span class="page-link"><span v-if="!isMobile">{{$t('next')}}</span>&nbsp;>></span>
                                 </li>
                             </ul>
                         </nav>
                     </div>
-                    <div class="dropdown order-by bd-highlight col-md-auto">
+                    <div class="dropdown order-by bd-highlight" :class="[isMobile ? 'col-3':'col-md-auto']">
                         <a style="float: right;" class="btn dropdown-toggle btn-per_pagina" href="#" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false" id="dropdownMenu">
                             {{paginas}} {{$t('per_page')}}
@@ -457,7 +477,7 @@
                             <li><a class="dropdown-item" href="#" @click="per_pages(100)">100</a></li>
                         </ul>
                     </div>
-                    <div class="dropdown order-by bd-highlight col-md-auto">
+                    <div class="dropdown order-by bd-highlight" :class="[isMobile ? 'col-3':'col-md-auto']">
                         <a style="float: right;" class="btn  dropdown-toggle btn-per_pagina" href="#" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false" id="dropdownMenu">
                             {{$t('order_by')}} {{ order }}
@@ -477,7 +497,7 @@
                         </ul>
                     </div>
                 </div>
-                <div v-else>
+                <div style="height: 78%;" v-else>
                     <h2>No se encontraron resultados.</h2>
                 </div>
             </div>
@@ -500,9 +520,9 @@
         </div>
     </template>
     <script type="text/template" id="facetas">
-            <nav class="navbar navbar-expand-lg navbar-dark menu-facetas">
+            <nav class="navbar navbar-expand-lg navbar-light menu-facetas">
                 <div class="">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="#navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="navbar-collapse collapse" id="navbarNavDropdown">
@@ -541,7 +561,7 @@
                                                                 </span>
                                                             </li>
                                                             <li class="list-group-item facet-label bg-facetas" v-if="facet.items.length > 5  ">
-                                                                <a class="more_facets_link" @click="get_data_facet(facet.name)">{{$t('more')}} <span
+                                                                <a href="#" class="more_facets_link" @click="get_data_facet(facet.name)">{{$t('more')}} <span
                                                                         class="sr-only"></span> »</a>
                                                             </li>
                                                         </ul>
@@ -626,13 +646,18 @@
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
     integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
     crossorigin="" />
+<link rel="stylesheet" href="./css/Control.FullScreen.css">
 <!--<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>-->
 <!-- DEVELOPMENT MODE -->
 <!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.13/vue.js"></script>-->
 <!-- PRODUCTION MODE -->
 <!-- Latest compiled and minified CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+<!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css" rel="stylesheet">
 <link href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css" rel="stylesheet">
@@ -648,6 +673,7 @@
 <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
     integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
     crossorigin=""></script>
+<script src="./js/Control.FullScreen.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.6.347/build/pdf.min.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.6.347/web/pdf_viewer.js"></script>
 
@@ -658,9 +684,14 @@
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
     integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
     crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    
+<!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
     integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
-    crossorigin="anonymous"></script>
+    crossorigin="anonymous"></script>-->
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDPbdLVfBy79lwLRuStHHH9KQsoBvxj5eE" async></script>
 <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster-src.js" async></script>
 <!--</script>-->
