@@ -1,0 +1,2 @@
+https://github.com/ColmexBDCV/vue_cartillas/releases/tag/cartillas_v1
+sha256: 74cbe4fca4ac5ad0e1ab9ce485c6d13707ffce6f047f0ff280df267a0753ef4d 
