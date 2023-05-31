@@ -14,7 +14,7 @@
         <footer>
             <div> 
                 <div style="background-color: #F5F5F5; height: 100px; border-bottom: solid 3px #E5E4E3; text-align: center;"
-                    class="p-3">
+                    class="p-3 logos-footer">
                     <a href="https://colmex.mx">
                         <img src="src/assets/logo_colmex.svg" width="350px" class="me-5" alt="">
                     </a>
@@ -22,10 +22,10 @@
                         <img src="src/assets/bdcv_project.png" class="me-5" alt="">
                     </a> 
                     <a href="https://mexico.sil.org/es">
-                        <img src="src/assets/footer_logo_instituto.png" alt="">
+                        <img src="src/assets/footer_logo_instituto.png" alt="" class="me-5">
                     </a>  
                 </div>
-                <div style="background-color: #F5F5F5; height: 100px; text-align: center;" class="p-4">
+                <div style="background-color: #F5F5F5; height: 100px; text-align: center;" class="p-4 dir-footer">
                     <p>
                         <strong>El Colegio de México A.C.</strong> Carretera Picacho Ajusco 20, Col. Ampliación Fuentes
                         del Pedregal, C.P. 14110 Tlalpan, Ciudad de México
@@ -366,12 +366,12 @@
                             {{ $t(key) }}
                         </div>
                         <div v-if="isObject(metadata)" class="col-7" style="text-align: left;">
-                            <p v-for="m in metadata">
+                            <p v-for="m in metadata" class="text-break">
                                 {{ m }}
                             </p>
                         </div>
                         <div v-else style="text-align: left;" class="col-7">
-                            <p>
+                            <p class="text-break">
                                 {{ metadata }}
                             </p>
                         </div>
@@ -383,7 +383,7 @@
         </div>
     </template>
     <template id="pages">
-        <div id="pages-div">
+        <div id="pages-div" style="overflow-x: auto;">
             <nav class="mt-5" aria-label="Paginas disponibles" style="text-align: center;" v-if="pages != undefined">
                 <ul class="pagination" v-if="pages.total_count != 0">
                     <li class="page-item" v-if="pages.current_page != 1">
