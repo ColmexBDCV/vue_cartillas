@@ -281,7 +281,7 @@ a:hover{
 }
 
 .search-form .form-control, .form-select{
-    width:auto;
+    width:1%;
 }
 
 .search-form .btn-search{

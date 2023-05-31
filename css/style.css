@@ -1122,6 +1122,26 @@ input.globalsearch {
   .search-form .form-control{
     width: 80%;
   }
+  .logos-footer{
+    min-height: 210px;
+  }
+  .dir-footer{
+    min-height: 180px;
+  }
+  .logos-footer img{
+    padding: 5px;
+    margin-right: 0px !important;
+  }
+  body{
+    background: none;
+  }
+  .colmex{
+    width: 300px !important;
+  }
+  .logo img{
+    height: 70px !important;
+  }
+
 }
 
 .restricted-access .text{
