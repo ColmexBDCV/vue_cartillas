@@ -1,3 +1,6 @@
+https://github.com/ColmexBDCV/vue_cartillas/archive/refs/tags/cartillas_v1.2.zip 
+sha256:  4495119930dda4c7cb3e603b1ffacec0409ba051f64ff767a9f858cb18c2571f
+
 https://github.com/ColmexBDCV/vue_cartillas/archive/refs/tags/cartillas_v1.1.zip
 sha256: 940dacac042b7ee60a35b1d0e59a8959ba462bc250544043437443c9f4781051
 
