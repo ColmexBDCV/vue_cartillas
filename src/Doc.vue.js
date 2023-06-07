@@ -14,6 +14,8 @@ export default{
             doc_prop: '',
             tmp_url: '',
             geonames_data: '',
+            search_in: "all_fields",
+            search: "",
             url_geonames: 'https://secure.geonames.org/getJSON?username=ecisneros&geonameId=',
             pdf_active: this.related != undefined ? true: false,
             url_share: this.$store.getters['principal/share_url'] + '?id=' + this.id + '&has_model=' + this.has_model + '&thumbnail=' + this.thumbnail + '&related=' + this.related,

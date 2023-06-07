@@ -56,6 +56,9 @@ export default{
     "table_of_contents": "Contenido",
     "notes": "Notas",
     "publisher": "Editorial",
+    "language_of_expression": "Idioma",
+    "researcher_agent_of": "Investigador",
+    
 
     //Translate for general page
     previous: 'Anterior',

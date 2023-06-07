@@ -997,6 +997,7 @@ input.globalsearch {
 .table-metadatos th{
   border-color: #00313E;
   color: #5B2779;
+  font-size: 16px !important;
 }
 
 .elements-title{
