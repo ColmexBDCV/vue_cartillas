@@ -29,9 +29,13 @@ export default{
         }
     },
     watch:{
-        api_data(){
-            this.get_coords();
-            return this.api_data;
+        async api_data(){
+            try{
+                this.get_coords();
+                return this.api_data;
+            }catch(exception){
+                this.$store.dispatch('principal/notify_error',{description: "", metodo: "api_data()", error: exception});
+            }            
         }
     },
     methods:{
@@ -82,36 +86,40 @@ export default{
                 zoomToBoundsOnClick: true,
                 disableClusteringAtZoom: true
             });*/
-
-            for(var i=0; i < this.api_data.length; i++){
-                var elemento = this.api_data[i];                
-                var coordinates = elemento.based_near_coordinates_tesim;
-                for(var j=0; j < coordinates.length; j++){
-                    var json_data = {};
-                    var coords = coordinates[j].split('|');
-                    var marker = L.marker(new L.LatLng(coords[0], coords[1]));
-                    //var marker = L.marker([coords.lat, coords.lng]).addTo(this.map);
-                    marker.bindPopup('<a href="#/docs?id='+ elemento.id +'&amp;has_model='+ elemento.has_model_ssim[0] +'&amp;thumbnail='+ elemento.thumbnail_path_ss +'&amp;related='+ elemento.hasRelatedMediaFragment_ssim[0] +'&amp;back_maps=true">' + elemento.title_tesim[0] + '</a>', {
-                        closeButton: false
-                    }).openPopup();
-                    this.markers.addLayer(marker);
-                    json_data.name = elemento.title_tesim[0];
-                    json_data.id_marker = this.markers.getLayerId(marker);
-                    this.data_markers.push(json_data);
+            try{
+                for(var i=0; i < this.api_data.length; i++){
+                    var elemento = this.api_data[i];                
+                    var coordinates = elemento.based_near_coordinates_tesim;
+                    for(var j=0; j < coordinates.length; j++){
+                        var json_data = {};
+                        var coords = coordinates[j].split('|');
+                        var marker = L.marker(new L.LatLng(coords[0], coords[1]));
+                        //var marker = L.marker([coords.lat, coords.lng]).addTo(this.map);
+                        marker.bindPopup('<a href="#/docs?id='+ elemento.id +'&amp;has_model='+ elemento.has_model_ssim[0] +'&amp;thumbnail='+ elemento.thumbnail_path_ss +'&amp;related='+ elemento.hasRelatedMediaFragment_ssim[0] +'&amp;back_maps=true">' + elemento.title_tesim[0] + '</a>', {
+                            closeButton: false
+                        }).openPopup();
+                        this.markers.addLayer(marker);
+                        json_data.name = elemento.title_tesim[0];
+                        json_data.id_marker = this.markers.getLayerId(marker);
+                        this.data_markers.push(json_data);
+                    }
                 }
+                //this.markers.addTo(this.map);
+                this.visible= false; 
+                this.create_list();
+                this.map.addLayer(this.markers);
+                /*this.api_data.forEach(function(elemento, indice, array) {
+                    var coordinates = elemento.coordinates;
+                    coordinates.forEach(function(coords, indice, array){
+                        var marker = L.marker([coords.lat, coords.lng]).addTo(this.map);
+                        //marker.bindPopup(elemento.title_tesim).openPopup();
+                        //this.set_marker();
+                    });
+                });*/
+            }catch(exception){
+                this.$store.dispatch('principal/notify_error',{description: "", metodo: "get_coords()", error: exception});
             }
-            //this.markers.addTo(this.map);
-            this.visible= false; 
-            this.create_list();
-            this.map.addLayer(this.markers);
-            /*this.api_data.forEach(function(elemento, indice, array) {
-                var coordinates = elemento.coordinates;
-                coordinates.forEach(function(coords, indice, array){
-                    var marker = L.marker([coords.lat, coords.lng]).addTo(this.map);
-                    //marker.bindPopup(elemento.title_tesim).openPopup();
-                    //this.set_marker();
-                });
-            });*/
+            
         },
         show_popup(data) {
             var marker_id = data.id_marker,
@@ -146,6 +154,9 @@ export default{
             await axios.get(this.url_api)
                 .then(response => {
                     this.api_data = response.data;
+            })
+            .catch(error => {
+                this.$store.dispatch('principal/notify_error',{description: "", metodo: "get_data()", error: error});
             });
         },
         showPopup(idmarker){

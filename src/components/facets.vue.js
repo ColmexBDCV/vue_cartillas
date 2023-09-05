@@ -43,6 +43,8 @@ export default {
 					this.facet_page = response.data.response.facets.facet_page
 					this.facet_sort = response.data.response.facets.sort
 					this.$store.commit('principal/set_modalFacets', true);
+                }).catch(error => {
+                    this.$store.dispatch('principal/notify_error',{description: "", metodo: "get_data_facet()", error: error});
                 });
         },
         compare_params: function (type, val) {
@@ -62,7 +64,9 @@ export default {
                .then(response => {
                    var repository = filter_data(response.data.response);
                    this.$store.commit('principal/set_repo', repository);
-               });
+               }).catch(error => {
+                this.$store.dispatch('principal/notify_error',{description: "", metodo: "get_data()", error: error});
+            });
        }   
     },
     computed:{

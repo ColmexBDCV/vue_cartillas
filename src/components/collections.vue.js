@@ -65,16 +65,25 @@ export default{
 
     },
     computed: {
-		repo(){  
-            this.get_facet();
-            //console.log(arreglo);
-			return this.$store.state.principal.repo;
+		repo(){
+            try{
+                this.get_facet();
+                //console.log(arreglo);
+			    return this.$store.state.principal.repo;
+            }catch(exception){
+                this.$store.dispatch('principal/notify_error',{description: "", metodo: "repo()", error: exception});
+            } 
         },
         collection(){
             return this.collection;
         }
 	},
     created: function () {
-		this.collections = this.init_data();
+        try{
+            this.collections = this.init_data();
+        }catch(exception){
+            this.$store.dispatch('principal/notify_error',{description: "", metodo: "created()", error: exception});
+        } 
+		
 	},
 }
