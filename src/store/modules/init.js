@@ -53,7 +53,30 @@ export default {
                .then(response => {
                    var repository = filter_data(response.data.response);
                    commit('set_repo', repository);
-               })
-       }
+               }).catch(error => {
+                this.$store.dispatch('principal/notify_error',{description: "", metodo: "get_data()", error: error});
+            });
+        }, 
+        async notify_error({ state, commit },{description, metodo, error}){
+            var json = {
+                "error": "Error en " + metodo + ", " + error,
+                "descripcion": "Error en el metodo " + metodo,
+                "sitio": "Cartillas Indigenas",
+                "url": "https://sandbox.colmex.mx/~ecisneros/cartillas/#"
+            }
+            axios.post("https://sandbox.colmex.mx/msbdcv/notificacion/enviarNotificacion",
+            JSON.stringify(json),{
+                headers: {
+                'Content-Type': 'application/json',
+                'Access-Control-Allow-Origin': '*'
+                },
+            }).then(res => {
+                console.log(`statusCode: ${res.status}`)
+                console.log(res)
+            })
+            .catch(error => {
+                console.log(error)
+            })
+        }
     }
 }

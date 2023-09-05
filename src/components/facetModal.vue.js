@@ -32,6 +32,8 @@ export default{
 			axios.get(url_tmp)
 				.then(response =>{
 					this.resolve_response(response.data.response, key);
+            }).catch(error => {
+                this.$store.dispatch('principal/notify_error',{description: "", metodo: "consult_page()", error: error});
             });
 		},
 		check_next(){
