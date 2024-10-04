@@ -95,13 +95,20 @@ export default{
                         var coords = coordinates[j].split('|');
                         var marker = L.marker(new L.LatLng(coords[0], coords[1]));
                         //var marker = L.marker([coords.lat, coords.lng]).addTo(this.map);
-                        marker.bindPopup('<a href="#/docs?id='+ elemento.id +'&amp;has_model='+ elemento.has_model_ssim[0] +'&amp;thumbnail='+ elemento.thumbnail_path_ss +'&amp;related='+ elemento.hasRelatedMediaFragment_ssim[0] +'&amp;back_maps=true">' + elemento.title_tesim[0] + '</a>', {
-                            closeButton: false
-                        }).openPopup();
-                        this.markers.addLayer(marker);
-                        json_data.name = elemento.title_tesim[0];
-                        json_data.id_marker = this.markers.getLayerId(marker);
-                        this.data_markers.push(json_data);
+                        var hasRelatedMedia = '';
+                        //hasRelatedMedia = elemento.hasOwnProperty('hasRelatedMediaFragment_ssim') ? '&amp;related='+ elemento.hasRelatedMediaFragment_ssim[0] : '';
+                        try{
+                            marker.bindPopup('<a href="#/docs?id='+ elemento.id +'&amp;has_model='+ elemento.has_model_ssim[0] +'&amp;thumbnail='+ elemento.thumbnail_path_ss + hasRelatedMedia +'&amp;back_maps=true">' + elemento.title_tesim[0] + '</a>', {
+                                closeButton: false
+                            }).openPopup();
+
+                            this.markers.addLayer(marker);
+                            json_data.name = elemento.title_tesim[0];
+                            json_data.id_marker = this.markers.getLayerId(marker);
+                            this.data_markers.push(json_data);
+                        }catch(excep_2){
+                            console.log('Elemento: ' + i + '    Error: ' + excep_2);
+                        }                
                     }
                 }
                 //this.markers.addTo(this.map);
